@@ -244,3 +244,225 @@
 .dark-x-theme header svg path {
   fill: #e7e9ea !important;
 }
+/* X’te Canlı panel arka planı */
+.dark-x-theme [data-testid="placementTracking"],
+.dark-x-theme [aria-label*="Yayın"] {
+  background-color: #16202a !important;
+  border: 1px solid #273340 !important;
+  border-radius: 16px !important;
+}
+/* X’te Canlı başlık */
+.dark-x-theme h2[role="heading"] {
+  color: #e7e9ea !important;
+}
+.dark-x-theme h2[role="heading"] span,
+.dark-x-theme h2[role="heading"] div[dir="ltr"] {
+  color: #e7e9ea !important;
+}
+.dark-x-theme h2[role="heading"],
+.dark-x-theme h2[role="heading"] * {
+  background-color: transparent !important;
+}
+.dark-x-theme h2[role="heading"] {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* =====================================
+   PROFİL AKSİYON İKONLARI
+===================================== */
+
+/* ikonların rengi */
+.dark-x-theme [aria-label="Daha fazla"] svg,
+.dark-x-theme [aria-label="Mesaj"] svg,
+.dark-x-theme [aria-label="Gönderi bildirimlerini aç"] svg {
+  fill: #e7e9ea !important;
+  color: #e7e9ea !important;
+}
+
+/* ikon buton arka plan */
+.dark-x-theme [data-testid="userActions"],
+.dark-x-theme [data-testid="sendDMFromProfile"],
+.dark-x-theme [aria-label="Gönderi bildirimlerini aç"] {
+  background-color: transparent !important;
+  border: 1px solid #273340 !important;
+  border-radius: 999px;
+}
+
+/* hover efekti */
+.dark-x-theme [data-testid="userActions"]:hover,
+.dark-x-theme [data-testid="sendDMFromProfile"]:hover,
+.dark-x-theme [aria-label="Gönderi bildirimlerini aç"]:hover {
+  background-color: rgba(29, 155, 240, 0.12) !important;
+}
+
+/* TAKİP EDİLİYOR butonu */
+.dark-x-theme [data-testid$="-unfollow"] {
+  border: 1px solid #273340 !important;
+  background-color: transparent !important;
+  color: #e7e9ea !important;
+  border-radius: 999px;
+}
+
+/* takip ediliyor hover */
+.dark-x-theme [data-testid$="-unfollow"]:hover {
+  background-color: rgba(244, 33, 46, 0.12) !important;
+  border-color: #f4212e !important;
+  color: #f4212e !important;
+}
+/* =====================================
+   AKTİF ZİL İKONU (BİLDİRİMLER AÇIK)
+===================================== */
+
+/* zil açıldıktan sonra görünen ikon */
+.dark-x-theme [aria-label="Gönderi bildirimlerini kapat"] svg,
+.dark-x-theme [aria-label="Bildirimler açık"] svg {
+  fill: #e7e9ea !important;
+  color: #e7e9ea !important;
+}
+
+/* açılan menü içindeki zil ikonları */
+.dark-x-theme [role="menu"] svg {
+  fill: #e7e9ea !important;
+  color: #e7e9ea !important;
+}
+
+/* =====================================
+   PREMIUM'A ABONE OL KARTI
+===================================== */
+
+/* kart arka plan */
+.dark-x-theme aside[aria-label*="Premium"] {
+  background-color: #16202a !important;
+  border: 1px solid #253341 !important;
+  border-radius: 16px !important;
+}
+
+/* başlık */
+.dark-x-theme aside[aria-label*="Premium"] span {
+  color: #e7e9ea !important;
+}
+
+/* açıklama metni */
+.dark-x-theme aside[aria-label*="Premium"] div[dir="ltr"] {
+  color: #8b98a5 !important;
+}
+
+/* Premium indirim etiketi kapsayıcı */
+.dark-x-theme div.r-wkklz9.r-1xfd6ze.r-cnw61z.r-is05cd {
+  margin-top: 8px !important;
+}
+
+/* indirim yazısı badge görünümü */
+.dark-x-theme div.r-wkklz9.r-1xfd6ze.r-cnw61z.r-is05cd span {
+  display: inline-block !important;
+  background: rgba(0, 208, 132, 0.15) !important;
+  color: #00d084 !important;
+  padding: 4px 12px !important;
+  border-radius: 999px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3px !important;
+}
+
+/* Alakalı kişiler kartı */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] {
+  background: #16202a !important;
+  border: 1px solid #253341 !important;
+  border-radius: 16px !important;
+}
+
+/* kart başlığı */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] h2 span {
+  color: #e6ecf0 !important;
+  font-weight: 700 !important;
+}
+
+/* kullanıcı isimleri */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] a div[dir="ltr"] {
+  color: #e6ecf0 !important;
+}
+
+/* kullanıcı adı (@handle) */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] div[style*="83, 100, 113"] {
+  color: #8899a6 !important;
+}
+
+/* açıklama metni */
+.dark-x-theme
+  aside[aria-label="Alakalı kişiler"]
+  div[style*="overflow: hidden"] {
+  color: #8899a6 !important;
+}
+
+/* hover arka plan */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] li:hover {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-radius: 12px;
+}
+
+/* takip et butonu */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] button {
+  background: #000000 !important;
+  color: #000 !important;
+  border-radius: 999px !important;
+  font-weight: 600;
+}
+
+/* takip butonu hover */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] button:hover {
+  background: #242424 !important;
+}
+
+/* avatar arkasındaki beyaz katmanı kaldır */
+.dark-x-theme aside[aria-label="Alakalı kişiler"] img {
+  background: transparent !important;
+}
+
+/* profil / kişi ikonları */
+.dark-x-theme svg path[d*="14 6c0 2.21"],
+.dark-x-theme svg path[d*="M14 6c0"] {
+  fill: #e6ecf0 !important;
+}
+
+/* genel ikon rengi düzeltme */
+.dark-x-theme svg {
+  color: #e6ecf0 !important;
+  fill: currentColor !important;
+}
+
+/* Menü arka planı */
+.dark-x-theme [role="menu"] {
+  background-color: #16202a !important;
+}
+
+/* Menü item varsayılan görünüm */
+.dark-x-theme [role="menuitem"] {
+  background-color: #16202a !important;
+  color: #fff !important;
+}
+
+/* Yazılar */
+.dark-x-theme [role="menuitem"] span,
+.dark-x-theme [role="menuitem"] div {
+  color: #fff !important;
+}
+
+/* SVG ikonlar */
+.dark-x-theme [role="menuitem"] svg {
+  fill: #fff !important;
+}
+
+/* Hover*/
+.dark-x-theme [role="menuitem"]:hover {
+  background-color: #243241 !important;
+}
+
+.dark-x-theme [role="menuitem"]:hover span,
+.dark-x-theme [role="menuitem"]:hover div {
+  color: #fff !important;
+}
+
+.dark-x-theme [role="menuitem"]:hover svg {
+  fill: #fff !important;
+}
