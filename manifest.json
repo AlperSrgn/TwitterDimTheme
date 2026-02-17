@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Dim Theme",
+  "version": "1.0",
+  "description": "Dim theme for X (Twitter)",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["*://*.twitter.com/*", "*://*.x.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*", "*://*.x.com/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}

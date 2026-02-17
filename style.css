@@ -1,0 +1,246 @@
+/* =======================================
+   X ADVANCED DARK THEME
+   Ana renk: #16202a
+   ======================================= */
+
+.dark-x-theme {
+  color-scheme: dark;
+}
+
+/* =======================================
+   GENEL ARKA PLAN
+   ======================================= */
+
+.dark-x-theme body,
+.dark-x-theme main,
+.dark-x-theme section,
+.dark-x-theme nav,
+.dark-x-theme header {
+  background-color: #16202a !important;
+}
+
+/* timeline */
+.dark-x-theme [data-testid="primaryColumn"] {
+  background-color: #16202a !important;
+}
+
+/* =======================================
+   KARTLAR & TWEETLER
+   ======================================= */
+
+.dark-x-theme article,
+.dark-x-theme [data-testid="tweet"],
+.dark-x-theme [role="article"] {
+  background-color: #16202a !important;
+  border-color: #22303c !important;
+}
+
+/* hover efekti */
+.dark-x-theme article:hover {
+  background-color: #1b2733 !important;
+}
+
+/* =======================================
+   SOL MENÜ
+   ======================================= */
+
+.dark-x-theme nav[aria-label="Birincil"] {
+  background-color: #16202a !important;
+}
+
+/* menü hover */
+.dark-x-theme nav[aria-label="Birincil"] a:hover {
+  background-color: #1b2733 !important;
+  border-radius: 999px;
+}
+
+/* aktif menü */
+.dark-x-theme nav[aria-label="Birincil"] a[aria-current="page"] {
+  background-color: #22303c !important;
+}
+
+/* ikonlar */
+.dark-x-theme nav svg {
+  fill: #e6edf3 !important;
+}
+
+/* =======================================
+   METİN RENKLERİ
+   ======================================= */
+
+/* ana metin */
+.dark-x-theme span,
+.dark-x-theme div,
+.dark-x-theme p {
+  color: #e7e9ea !important;
+}
+
+/* kullanıcı adı */
+.dark-x-theme strong {
+  color: #ffffff !important;
+}
+
+/* ikincil metin */
+.dark-x-theme time,
+.dark-x-theme [data-testid="User-Name"] span:last-child {
+  color: #8b98a5 !important;
+}
+
+/* linkler */
+.dark-x-theme a {
+  color: #1d9bf0 !important;
+}
+
+.dark-x-theme a:hover {
+  color: #4fb3ff !important;
+}
+
+/* =======================================
+   BUTONLAR
+   ======================================= */
+
+.dark-x-theme button {
+  color: #e7e9ea !important;
+}
+
+/* açık renk kalan butonları düzelt */
+.dark-x-theme button[style*="rgb(239, 243, 244)"] {
+  background-color: #22303c !important;
+  color: #e7e9ea !important;
+}
+
+/* ana buton */
+.dark-x-theme [data-testid="tweetButtonInline"] {
+  background-color: #1d9bf0 !important;
+}
+
+.dark-x-theme [data-testid="tweetButtonInline"]:hover {
+  background-color: #1a8cd8 !important;
+}
+
+/* =======================================
+   INPUT & YAZI ALANLARI
+   ======================================= */
+
+.dark-x-theme textarea,
+.dark-x-theme input {
+  background-color: #16202a !important;
+  color: #e7e9ea !important;
+}
+
+.dark-x-theme ::placeholder {
+  color: #8b98a5 !important;
+}
+
+/* =======================================
+   SEÇİLİ METİN
+   ======================================= */
+
+.dark-x-theme ::selection {
+  background: #1d9bf0;
+  color: white;
+}
+
+/* =======================================
+   SCROLLBAR
+   ======================================= */
+
+.dark-x-theme ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dark-x-theme ::-webkit-scrollbar-thumb {
+  background: #2f3e4d;
+  border-radius: 10px;
+}
+
+.dark-x-theme ::-webkit-scrollbar-thumb:hover {
+  background: #3f5366;
+}
+
+/* =======================================
+   MODAL & POPUP
+   ======================================= */
+
+.dark-x-theme [role="dialog"] {
+  background-color: #16202a !important;
+}
+
+/* =======================================
+   BORDER DENGESİ
+   ======================================= */
+
+.dark-x-theme * {
+  border-color: #22303c !important;
+}
+/* =======================================
+   KİMİ TAKİP ETMELİ (WHO TO FOLLOW)
+   ======================================= */
+
+/* panel ana kutu */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] {
+  background-color: #16202a !important;
+  border: 1px solid #22303c !important;
+  border-radius: 16px;
+}
+
+/* başlık */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] h2 span {
+  color: #e7e9ea !important;
+  font-weight: 700;
+}
+
+/* kullanıcı kart hover */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] li:hover {
+  background-color: #1b2733 !important;
+  border-radius: 12px;
+}
+
+/* isim */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] div[dir="ltr"] span {
+  color: #e7e9ea !important;
+}
+
+/* kullanıcı adı (@handle) */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] span:has(+ span),
+.dark-x-theme
+  aside[aria-label="Kimi takip etmeli"]
+  div[style*="83, 100, 113"]
+  span {
+  color: #8b98a5 !important;
+}
+
+/* takip et butonu */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] button {
+  background-color: #000 !important;
+  color: #e7e9ea !important;
+  border: none !important;
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 6px 16px;
+  transition: all 0.2s ease;
+}
+
+/* hover efekti */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] button:hover {
+  background-color: #242424 !important;
+  transform: scale(1.05);
+}
+
+/* aktif tıklama efekti */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] button:active {
+  transform: scale(0.96);
+}
+
+/* daha fazla göster */
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] a[role="link"] span {
+  color: #e7e9ea !important;
+}
+
+.dark-x-theme aside[aria-label="Kimi takip etmeli"] a[role="link"]:hover span {
+  color: #e7e9ea !important;
+}
+/* Sol üst X logosu */
+.dark-x-theme header svg path {
+  fill: #e7e9ea !important;
+}
