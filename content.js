@@ -1,8 +1,8 @@
 // =======================================
-//   X ADVANCED DARK THEME CONTENT SCRIPT
+//   X ADVANCED DIM THEME CONTENT SCRIPT
 // =======================================
 
-const THEME_CLASS = "dark-x-theme";
+const THEME_CLASS = "dim-x-theme";
 let currentState = false;
 
 /**
@@ -17,8 +17,8 @@ function applyTheme(isEnabled) {
  * Storage’dan ilk yükleme
  */
 function initializeTheme() {
-  chrome.storage.sync.get(["darkMode"], result => {
-    applyTheme(result.darkMode === true);
+  chrome.storage.sync.get(["dimMode"], result => {
+    applyTheme(result.dimMode === true);
   });
 }
 

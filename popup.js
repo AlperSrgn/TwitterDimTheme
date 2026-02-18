@@ -4,8 +4,8 @@ const toggleBtn = document.getElementById("toggleBtn");
  * Popup açıldığında mevcut durumu yükle
  */
 document.addEventListener("DOMContentLoaded", () => {
-  chrome.storage.sync.get(["darkMode"], result => {
-    updateButton(result.darkMode === true);
+  chrome.storage.sync.get(["dimMode"], result => {
+    updateButton(result.dimMode === true);
   });
 });
 
@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
  * Butona tıklanınca tema değiştir
  */
 toggleBtn.addEventListener("click", () => {
-  chrome.storage.sync.get(["darkMode"], result => {
-    const newState = !result.darkMode;
+  chrome.storage.sync.get(["dimMode"], result => {
+    const newState = !result.dimMode;
 
-    chrome.storage.sync.set({ darkMode: newState });
+    chrome.storage.sync.set({ dimMode: newState });
 
     // aktif sekmeye mesaj gönder
     chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
