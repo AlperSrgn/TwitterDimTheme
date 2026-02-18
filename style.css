@@ -475,8 +475,8 @@
 }
 
 /* Hesap menüsü panel arka planı */
-[data-testid="AccountSwitcher_AddAccount_Button"],
-[data-testid="AccountSwitcher_Logout_Button"] {
+.dark-x-theme [data-testid="AccountSwitcher_AddAccount_Button"],
+.dark-x-theme [data-testid="AccountSwitcher_Logout_Button"] {
   background-color: #16202a !important;
 }
 
@@ -487,46 +487,46 @@
 }
 
 /* Menü item arka plan */
-a[role="menuitem"] {
+.dark-x-theme a[role="menuitem"] {
   background-color: #16202a !important;
 }
 
 /* Yazılar */
-a[role="menuitem"] span,
-a[role="menuitem"] div {
+.dark-x-theme a[role="menuitem"] span,
+.dark-x-theme a[role="menuitem"] div {
   color: #e6edf3 !important;
 }
 
 /* Hover efekti */
-a[role="menuitem"]:hover {
+.dark-x-theme a[role="menuitem"]:hover {
   background-color: #243241 !important;
 }
 
 /* Menü item temel görünüm */
-[role="menu"] a[role="link"] {
+.dark-x-theme .dark-x-theme [role="menu"] a[role="link"] {
   background-color: #16202a !important;
   color: #e6edf3 !important;
   transition: opacity 0.15s ease;
 }
 
 /* Hover → sadece opaklık değişsin */
-[role="menu"] a[role="link"]:hover {
+.dark-x-theme [role="menu"] a[role="link"]:hover {
   background-color: #243241 !important;
 }
 
 /* İç kapsayıcı hover override */
-[role="menu"] a[role="link"]:hover > div {
+.dark-x-theme [role="menu"] a[role="link"]:hover > div {
   background-color: transparent !important;
 }
 
 /* Yazılar */
-[role="menu"] a[role="link"] span,
-[role="menu"] a[role="link"] div {
+.dark-x-theme [role="menu"] a[role="link"] span,
+.dark-x-theme [role="menu"] a[role="link"] div {
   color: #e6edf3 !important;
 }
 
 /* ikonlar */
-[role="menu"] a[role="link"] svg {
+.dark-x-theme [role="menu"] a[role="link"] svg {
   fill: #e6edf3 !important;
 }
 
