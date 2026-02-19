@@ -82,37 +82,11 @@
 }
 
 /* =======================================
-   Sol Üst Köşe X ikonu
+   Sol Üst Köşe X ikonu ve sol menü ikonlar
    ======================================= */
 .dim-x-theme header svg path {
   fill: #e7e9ea !important;
 }
-/* =======================================
-   X’te Canlı panel arka planı
-  ======================================= */
-.dim-x-theme [data-testid="placementTracking"],
-.dim-x-theme [aria-label*="Yayın"] {
-  background-color: #16202a !important;
-  border: 1px solid #273340 !important;
-  border-radius: 16px !important;
-}
-/* X’te Canlı başlık */
-.dim-x-theme h2[role="heading"] {
-  color: #e7e9ea !important;
-}
-.dim-x-theme h2[role="heading"] span,
-.dim-x-theme h2[role="heading"] div[dir="ltr"] {
-  color: #e7e9ea !important;
-}
-.dim-x-theme h2[role="heading"],
-.dim-x-theme h2[role="heading"] * {
-  background-color: transparent !important;
-}
-.dim-x-theme h2[role="heading"] {
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
-
 /* =====================================
    PROFİL AKSİYON İKONLARI
 ===================================== */
@@ -281,7 +255,6 @@
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] button:hover {
   background-color: #243241 !important;
-  border-radius: 10px;
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] button:hover svg {
   color: #8fb3d9 !important;
@@ -307,11 +280,10 @@
 }
 
 /* =======================================
-   Premium / ONAYLI HESAP BİLGİLENDİRME KARTI
+   Premium / ONAYLI HESAP BİLGİLENDİRME KARTI              "BAZEN HATA MEVCUT"
    ======================================= */
 .dim-x-theme div[style*="194, 241, 220"] {
   background-color: #104728 !important;
-  border: 1px solid #22303c !important;
 }
 
 /* Kart iç başlık */
@@ -333,4 +305,413 @@
 /* Buton hover */
 .dim-x-theme a[href="/i/premium_sign_up"]:hover {
   background-color: #22303c !important;
+}
+
+/* =======================================
+   ÜST BAŞLIK ÇUBUĞU İKONLARI
+   ======================================= */
+/* Üst bar ikon renk düzeltme */
+.dim-x-theme
+  [data-testid="app-bar-back"]
+  svg:not([data-testid="icon-verified"]),
+.dim-x-theme [aria-label="Profil Özeti"] svg:not([data-testid="icon-verified"]),
+.dim-x-theme [aria-label="Ara"] svg:not([data-testid="icon-verified"]) {
+  color: #e7eef6 !important;
+  fill: currentColor !important;
+}
+
+.dim-x-theme
+  [data-testid="app-bar-back"]:hover
+  svg:not([data-testid="icon-verified"]),
+.dim-x-theme
+  [aria-label="Profil Özeti"]:hover
+  svg:not([data-testid="icon-verified"]),
+.dim-x-theme [aria-label="Ara"]:hover svg:not([data-testid="icon-verified"]) {
+  color: #8fb3d9 !important;
+}
+
+/* Ayarlar (dişli) ikonu */
+.dim-x-theme
+  [data-testid="settingsAppBar"]
+  svg:not([data-testid="icon-verified"]) {
+  color: #e7eef6 !important;
+  fill: currentColor !important;
+}
+
+.dim-x-theme
+  [data-testid="settingsAppBar"]:hover
+  svg:not([data-testid="icon-verified"]) {
+  color: #8fb3d9 !important;
+}
+/*Liste oluştur ikonu*/
+.dim-x-theme a[aria-label="Yeni bir Liste oluştur"] svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+.dim-x-theme a[aria-label="Yeni bir Liste oluştur"]:hover {
+  background-color: rgba(230, 237, 243, 0.08) !important;
+}
+
+.dim-x-theme a[aria-label="Yeni bir Liste oluştur"]:hover svg {
+  color: #ffffff !important;
+}
+
+/* =======================================
+   Modal kapatma (X) ikonu
+   ======================================= */
+.dim-x-theme [data-testid="app-bar-close"] svg {
+  color: #e7eef6 !important;
+  fill: currentColor !important;
+}
+/* hover efekti */
+.dim-x-theme [data-testid="app-bar-close"]:hover svg {
+  color: #8fb3d9 !important;
+}
+/* hover arka plan yumuşatma */
+.dim-x-theme [data-testid="app-bar-close"]:hover {
+  background-color: #243241 !important;
+}
+
+/* =======================================
+   Üç nokta(...) dropdown menuleri
+   ======================================= */
+.dim-x-theme [role="menuitem"]:hover {
+  background-color: #243241 !important;
+}
+
+/* =======================================
+   GROK SOHBET PENCERESİ ve METİN RENKLERİ
+   ======================================= */
+/* Textarea arka plan ve metin rengi */
+.dim-x-theme textarea.r-30o5oe {
+  background-color: #16202a !important; /* Koyu tema arka plan */
+  color: #eff3f4 !important; /* Açık metin rengi */
+  caret-color: #ffffff !important; /* İmleç rengi */
+}
+/* Placeholder rengi */
+.dim-x-theme textarea.r-30o5oe::placeholder {
+  color: #aab1b8 !important; /* Açık gri */
+  opacity: 1 !important;
+}
+
+/*grok penceresindeki butonlar*/
+.dim-x-theme
+  .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
+  button.css-175oi2r.r-1phboty {
+  background-color: #16202a !important;
+  color: #eff3f4 !important;
+  border-color: #3a3f47 !important;
+}
+
+/* Buton içindeki svg ikonları */
+.dim-x-theme
+  .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
+  button.css-175oi2r.r-1phboty
+  svg {
+  color: #eff3f4 !important;
+}
+
+/* Buton içindeki span yazıları ve alt çizgiler */
+.dim-x-theme
+  .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
+  button.css-175oi2r.r-1phboty
+  span.css-1jxf684 {
+  color: #eff3f4 !important;
+  border-bottom-color: #eff3f4 !important;
+}
+
+/* Hover efekti */
+.dim-x-theme
+  .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
+  button.css-175oi2r.r-1phboty:hover {
+  background-color: #2f3e4d !important;
+  border-color: #3a3f47 !important;
+}
+
+/*Grok penceresi: Kapat butonu*/
+.dim-x-theme button[aria-label="Kapat"].r-1phboty {
+  background-color: #16202a !important; /* Koyu arka plan */
+  border-color: #3a3f47 !important; /* Hafif sınır */
+  color: #eff3f4 !important; /* Metin rengi */
+}
+
+/* İçindeki svg ikon rengi */
+.dim-x-theme button[aria-label="Kapat"].r-1phboty svg {
+  color: #eff3f4 !important;
+}
+
+/* Alt çizgi (span) rengi */
+.dim-x-theme button[aria-label="Kapat"].r-1phboty span.css-1jxf684 {
+  border-bottom-color: #eff3f4 !important;
+}
+
+/* Hover efekti */
+.dim-x-theme button[aria-label="Kapat"].r-1phboty:hover {
+  background-color: #2f3e4d !important;
+  border-color: #3a3f47 !important;
+}
+
+/* =======================================
+   X Sohbet (DM şifreleme tanıtımı)
+   ======================================= */
+/* Sohbet onboarding paneli başlık */
+.dim-x-theme [data-testid="pin-onboarding-title"] {
+  color: #e6edf3 !important;
+}
+
+/* Özellik başlıkları */
+.dim-x-theme [data-testid="pin-onboarding-title"] ~ div .font-bold {
+  color: #e6edf3 !important;
+}
+
+/* Açıklama metinleri */
+.dim-x-theme [data-testid="pin-onboarding-title"] ~ div .text-gray-700 {
+  color: #9fb3c8 !important;
+}
+
+/* ikon renklerini temaya uyarla */
+.dim-x-theme [data-testid="pin-onboarding-title"] ~ div svg {
+  color: #8fb3d9 !important;
+}
+
+/* buton yazısı */
+.dim-x-theme button[data-testid="pin-onboarding-setup-now"] {
+  color: #0f1419 !important;
+  background-color: #e6edf3 !important;
+}
+/* hover efekti */
+.dim-x-theme button[data-testid="pin-onboarding-setup-now"]:hover {
+  background-color: #cfd9e2 !important;
+  color: #0f1419 !important;
+}
+.dim-x-theme button svg[data-icon="icon-media-undock"],
+.dim-x-theme button svg[data-icon="icon-chevron-down"] {
+  color: #e6edf3 !important;
+}
+.dim-x-theme button:hover svg[data-icon="icon-media-undock"],
+.dim-x-theme button:hover svg[data-icon="icon-chevron-down"] {
+  color: #8fb3d9 !important;
+}
+/* kapsayıcı metin rengi */
+.dim-x-theme [data-testid="pin-title"],
+.dim-x-theme [data-testid="pin-title"] + div {
+  color: var(--x-text-color, #e6edf3) !important;
+}
+/* açıklama metni */
+.dim-x-theme .text-gray-700 {
+  color: var(--x-secondary-text, #8b98a5) !important;
+}
+/* ikon rengi */
+.dim-x-theme svg[data-icon="icon-passcode"] {
+  color: var(--x-text-color, #e6edf3) !important;
+}
+/* pin input çemberleri */
+.dim-x-theme input[inputmode="numeric"] {
+  border-color: rgba(120, 130, 140, 0.4) !important;
+}
+/* focus olduğunda */
+.dim-x-theme input[inputmode="numeric"]:focus {
+  border-color: var(--x-accent-color, #1d9bf0) !important;
+  box-shadow: 0 0 0 2px rgba(29, 155, 240, 0.15);
+}
+/* caret rengi */
+.dim-x-theme input[inputmode="numeric"] {
+  caret-color: var(--x-text-color, #e6edf3);
+}
+/* pin içine yazılan rakam */
+.dim-x-theme input[inputmode="numeric"] {
+  color: var(--x-text-color, #e6edf3) !important;
+}
+.dim-x-theme input[inputmode="numeric"] + div div {
+  color: var(--x-text-color, #e6edf3) !important;
+}
+
+/* =======================================
+   X Sohbet Ekranı (DM)
+   ======================================= */
+/* DM başlığı */
+.dim-x-theme [data-testid="dm-inbox-title"] {
+  color: var(--x-text-color, #e6edf3) !important;
+}
+/* boş inbox ikon rengi */
+.dim-x-theme [data-testid="dm-empty-inbox"] svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+
+/* başlık */
+.dim-x-theme [data-testid="dm-empty-inbox-title"] {
+  color: #e6edf3 !important;
+}
+
+/* açıklama metni */
+.dim-x-theme [data-testid="dm-empty-inbox-subtitle"] {
+  color: #8b98a5 !important;
+}
+/* sekme kapsayıcı (isteğe bağlı) */
+.dim-x-theme [data-testid="dm-inbox-tabs-list"] {
+  background: transparent !important;
+}
+
+/* pasif sekmeler */
+.dim-x-theme [data-testid="dm-inbox-tabs-list"] button {
+  color: #8b98a5 !important;
+  border: 1px solid #2f3b45 !important;
+  background: transparent !important;
+}
+
+/* hover */
+.dim-x-theme [data-testid="dm-inbox-tabs-list"] button:hover {
+  background: #1e2732 !important;
+  color: #e6edf3 !important;
+}
+
+/* aktif sekme */
+.dim-x-theme [data-testid="dm-inbox-tabs-list"] button[data-state="active"] {
+  background: #e6edf3 !important;
+  color: #0f1419 !important;
+  border-color: #e6edf3 !important;
+  font-weight: 500 !important;
+}
+/* ikon dairesi arka planı */
+.dim-x-theme [data-testid="dm-empty-conversation-state"] .bg-gray-0 {
+  background-color: #1e2732 !important;
+}
+
+/* ikon rengi */
+.dim-x-theme [data-testid="dm-empty-conversation-state"] svg {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+
+/* başlık */
+.dim-x-theme [data-testid="dm-empty-conversation-title"] {
+  color: #e6edf3 !important;
+}
+
+/* açıklama metni */
+.dim-x-theme [data-testid="dm-empty-conversation-description"] {
+  color: #8b98a5 !important;
+}
+
+/* Yeni sohbet butonu */
+.dim-x-theme [data-testid="dm-empty-conversation-new-chat-button"] {
+  background-color: #e6edf3 !important;
+  color: #0f1419 !important;
+  border-color: transparent !important;
+}
+
+/* hover efekti */
+.dim-x-theme [data-testid="dm-empty-conversation-new-chat-button"]:hover {
+  background-color: #cfd9e2 !important;
+}
+/* arama kutusu kapsayıcı */
+.dim-x-theme .px-4.py-1 .bg-gray-0 {
+  background-color: #1e2732 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* focus durumunda */
+.dim-x-theme .px-4.py-1 .bg-gray-0:focus-within {
+  background-color: #1a222c !important;
+  border-color: #8fb3d9 !important;
+}
+
+/* arama ikonu */
+.dim-x-theme [data-icon="icon-search-stroke"] {
+  color: #8b98a5 !important;
+}
+
+/* input yazı rengi */
+.dim-x-theme input[placeholder="Ara"] {
+  color: #e6edf3 !important;
+}
+
+/* placeholder rengi */
+.dim-x-theme input[placeholder="Ara"]::placeholder {
+  color: #8b98a5 !important;
+}
+
+/* temizle butonu metni */
+.dim-x-theme button:has(div:contains("Temizle")) div {
+  color: #8b98a5 !important;
+}
+
+/* temizle hover */
+.dim-x-theme button:has(div:contains("Temizle")):hover div {
+  color: #e6edf3 !important;
+}
+
+/* =====================================
+   GROK chat sayfası
+===================================== */
+/* GROK logo rengi */
+.dim-x-theme svg.r-18jsvk2 {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+/* Sohbet sekmeleri metin + ikon */
+.dim-x-theme button[aria-label="Sohbet geçmişi"],
+.dim-x-theme button[aria-label="Özel"] {
+  color: #e6edf3 !important;
+}
+
+.dim-x-theme button[aria-label="Sohbet geçmişi"] svg,
+.dim-x-theme button[aria-label="Özel"] svg {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+.dim-x-theme button[aria-label="Sohbet geçmişi"]:hover,
+.dim-x-theme button[aria-label="Özel"]:hover {
+  background-color: rgba(143, 179, 217, 0.12) !important;
+}
+.dim-x-theme span.css-1jxf684.r-poiln3 {
+  color: #e6edf3 !important;
+}
+/* ikon renkleri */
+.dim-x-theme button:has(svg) {
+  color: #e6edf3 !important;
+}
+
+/* svg ikonlar */
+.dim-x-theme button:has(svg) svg {
+  color: inherit !important;
+}
+
+/* hover arkaplan efekti */
+.dim-x-theme button:has(svg):hover {
+  background-color: rgba(230, 237, 243, 0.08) !important;
+}
+
+/* hover ikon parlama */
+.dim-x-theme button:has(svg):hover svg {
+  color: #ffffff !important;
+}
+
+/* aktif / seçili / dolu ikon hali */
+.dim-x-theme button[aria-pressed="true"] svg,
+.dim-x-theme button[data-state="on"] svg,
+.dim-x-theme button[data-testid*="remove"] svg {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+/* mesaj yazma alanı kapsayıcı */
+.dim-x-theme div:has(textarea) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+/* ALT BAR BUTONLARI */
+.dim-x-theme [data-testid="model_steering_button_LOW"] ~ div,
+.dim-x-theme [data-testid="model_steering_button_LOW"] {
+  background: transparent !important;
+}
+.dim-x-theme .r-x572qd {
+  background-color: rgba(230, 237, 243, 0.04) !important;
+}
+.dim-x-theme .r-x572qd:hover {
+  background-color: rgba(20, 21, 21, 0.1) !important;
+  color: #ffffff;
+}
+.dim-x-theme .r-1sw30gj.r-1fuqb1j.r-1ssbvtb {
+  background-color: rgba(230, 237, 243, 0.04) !important;
 }
