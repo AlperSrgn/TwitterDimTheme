@@ -87,60 +87,36 @@
 .dim-x-theme header svg path {
   fill: #e7e9ea !important;
 }
+
 /* =====================================
    PROFİL AKSİYON İKONLARI
-===================================== */
+  ===================================== */
 
-/* ikonların rengi */
-.dim-x-theme [aria-label="Daha fazla"] svg,
-.dim-x-theme [aria-label="Mesaj"] svg,
-.dim-x-theme [aria-label="Gönderi bildirimlerini aç"] svg {
+/* profil aksiyon buton ikonları */
+.dim-x-theme [data-testid="userActions"] svg,
+.dim-x-theme [data-testid="sendDMFromProfile"] svg,
+.dim-x-theme button[aria-haspopup="menu"] svg {
   fill: #e7e9ea !important;
-  color: #e7e9ea !important;
 }
 
-/* ikon buton arka plan */
+/* arka plan */
 .dim-x-theme [data-testid="userActions"],
-.dim-x-theme [data-testid="sendDMFromProfile"],
-.dim-x-theme [aria-label="Gönderi bildirimlerini aç"] {
+.dim-x-theme [data-testid="sendDMFromProfile"] {
   background-color: transparent !important;
 }
 
-/* hover efekti */
+/* hover */
 .dim-x-theme [data-testid="userActions"]:hover,
-.dim-x-theme [data-testid="sendDMFromProfile"]:hover,
-.dim-x-theme [aria-label="Gönderi bildirimlerini aç"]:hover {
+.dim-x-theme [data-testid="sendDMFromProfile"]:hover {
   background-color: rgba(29, 155, 240, 0.12) !important;
 }
 
-/* TAKİP EDİLİYOR butonu */
-.dim-x-theme [data-testid$="-unfollow"] {
+.dim-x-theme header button {
   background-color: transparent !important;
-  color: #e7e9ea !important;
 }
 
-/* takip ediliyor hover */
-.dim-x-theme [data-testid$="-unfollow"]:hover {
-  background-color: rgba(244, 33, 46, 0.12) !important;
-  border-color: #f4212e !important;
-  color: #f4212e !important;
-}
-
-/* =====================================
-   AKTİF ZİL İKONU (BİLDİRİMLER AÇIK)
-===================================== */
-
-/* zil açıldıktan sonra görünen ikon */
-.dim-x-theme [aria-label="Gönderi bildirimlerini kapat"] svg,
-.dim-x-theme [aria-label="Bildirimler açık"] svg {
-  fill: #e7e9ea !important;
-  color: #e7e9ea !important;
-}
-
-/* açılan menü içindeki zil ikonları */
-.dim-x-theme [role="menu"] svg {
-  fill: #e7e9ea !important;
-  color: #e7e9ea !important;
+.dim-x-theme header button:hover {
+  background-color: rgba(29, 155, 240, 0.12) !important;
 }
 
 /* =====================================
@@ -151,14 +127,6 @@
 .dim-x-theme div.r-wkklz9.r-1xfd6ze.r-cnw61z.r-is05cd span {
   /*background: rgba(0, 208, 132, 0.15) !important;*/
   color: #004329 !important;
-}
-
-/* =====================================
-   Profil / kişi ikonları
-===================================== */
-.dim-x-theme svg path[d*="14 6c0 2.21"],
-.dim-x-theme svg path[d*="M14 6c0"] {
-  fill: #e6ecf0 !important;
 }
 
 /* genel ikon rengi düzeltme */
@@ -280,7 +248,7 @@
 }
 
 /* =======================================
-   Premium / ONAYLI HESAP BİLGİLENDİRME KARTI              "BAZEN HATA MEVCUT"
+   Premium / ONAYLI HESAP BİLGİLENDİRME KARTI
    ======================================= */
 .dim-x-theme div[style*="194, 241, 220"] {
   background-color: #104728 !important;
@@ -311,65 +279,48 @@
    ÜST BAŞLIK ÇUBUĞU İKONLARI
    ======================================= */
 /* Üst bar ikon renk düzeltme */
-.dim-x-theme
-  [data-testid="app-bar-back"]
-  svg:not([data-testid="icon-verified"]),
-.dim-x-theme [aria-label="Profil Özeti"] svg:not([data-testid="icon-verified"]),
-.dim-x-theme [aria-label="Ara"] svg:not([data-testid="icon-verified"]) {
-  color: #e7eef6 !important;
-  fill: currentColor !important;
-}
-
-.dim-x-theme
-  [data-testid="app-bar-back"]:hover
-  svg:not([data-testid="icon-verified"]),
-.dim-x-theme
-  [aria-label="Profil Özeti"]:hover
-  svg:not([data-testid="icon-verified"]),
-.dim-x-theme [aria-label="Ara"]:hover svg:not([data-testid="icon-verified"]) {
-  color: #8fb3d9 !important;
-}
 
 /* Ayarlar (dişli) ikonu */
-.dim-x-theme
-  [data-testid="settingsAppBar"]
-  svg:not([data-testid="icon-verified"]) {
+/* ikon rengi */
+.dim-x-theme [data-testid="settingsAppBar"] svg {
   color: #e7eef6 !important;
   fill: currentColor !important;
 }
+/* hover arka plan */
+.dim-x-theme [data-testid="settingsAppBar"]:hover {
+  background-color: rgba(29, 155, 240, 0.12) !important;
+}
+/* focus (klavye erişilebilirlik) */
+.dim-x-theme [data-testid="settingsAppBar"]:focus-visible {
+  outline: none !important;
+  background-color: rgba(29, 155, 240, 0.18) !important;
+}
+/* Liste oluştur butonu */
+.dim-x-theme a[href="/i/lists/create"] svg {
+  color: #e7e9ea !important;
+  fill: currentColor !important;
+}
 
-.dim-x-theme
-  [data-testid="settingsAppBar"]:hover
-  svg:not([data-testid="icon-verified"]) {
-  color: #8fb3d9 !important;
-}
-/*Liste oluştur ikonu*/
-.dim-x-theme a[aria-label="Yeni bir Liste oluştur"] svg {
-  color: #e6edf3 !important;
-  fill: #e6edf3 !important;
-}
-.dim-x-theme a[aria-label="Yeni bir Liste oluştur"]:hover {
+/* hover arka plan */
+.dim-x-theme a[href="/i/lists/create"]:hover {
   background-color: rgba(230, 237, 243, 0.08) !important;
 }
 
-.dim-x-theme a[aria-label="Yeni bir Liste oluştur"]:hover svg {
+/* hover ikon rengi */
+.dim-x-theme a[href="/i/lists/create"]:hover svg {
   color: #ffffff !important;
 }
 
 /* =======================================
-   Modal kapatma (X) ikonu
+   ONAY ROZETLERİ ORİNİJAL RENKLERİNİ KORUSUN
    ======================================= */
-.dim-x-theme [data-testid="app-bar-close"] svg {
-  color: #e7eef6 !important;
-  fill: currentColor !important;
+.dim-x-theme svg[data-testid="icon-verified"] {
+  color: rgb(29, 155, 240) !important; /* mavi tik */
+  fill: rgb(29, 155, 240) !important;
 }
-/* hover efekti */
-.dim-x-theme [data-testid="app-bar-close"]:hover svg {
-  color: #8fb3d9 !important;
-}
-/* hover arka plan yumuşatma */
-.dim-x-theme [data-testid="app-bar-close"]:hover {
-  background-color: #243241 !important;
+/* genel svg kuralların varsa onay rozetlerini hariç tut */
+.dim-x-theme svg:not([data-testid="icon-verified"]) {
+  fill: currentColor;
 }
 
 /* =======================================
@@ -394,7 +345,7 @@
   opacity: 1 !important;
 }
 
-/*grok penceresindeki butonlar*/
+/*grok penceresindeki metin içerikli butonlar*/
 .dim-x-theme
   .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
   button.css-175oi2r.r-1phboty {
@@ -403,52 +354,16 @@
   border-color: #3a3f47 !important;
 }
 
-/* Buton içindeki svg ikonları */
-.dim-x-theme
-  .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
-  button.css-175oi2r.r-1phboty
-  svg {
-  color: #eff3f4 !important;
-}
-
-/* Buton içindeki span yazıları ve alt çizgiler */
-.dim-x-theme
-  .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
-  button.css-175oi2r.r-1phboty
-  span.css-1jxf684 {
-  color: #eff3f4 !important;
-  border-bottom-color: #eff3f4 !important;
-}
-
-/* Hover efekti */
+/* grok penceresindeki metin içerikli butonlar Hover efekti */
 .dim-x-theme
   .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
   button.css-175oi2r.r-1phboty:hover {
   background-color: #2f3e4d !important;
   border-color: #3a3f47 !important;
 }
-
-/*Grok penceresi: Kapat butonu*/
-.dim-x-theme button[aria-label="Kapat"].r-1phboty {
-  background-color: #16202a !important; /* Koyu arka plan */
-  border-color: #3a3f47 !important; /* Hafif sınır */
-  color: #eff3f4 !important; /* Metin rengi */
-}
-
-/* İçindeki svg ikon rengi */
-.dim-x-theme button[aria-label="Kapat"].r-1phboty svg {
-  color: #eff3f4 !important;
-}
-
-/* Alt çizgi (span) rengi */
-.dim-x-theme button[aria-label="Kapat"].r-1phboty span.css-1jxf684 {
-  border-bottom-color: #eff3f4 !important;
-}
-
-/* Hover efekti */
-.dim-x-theme button[aria-label="Kapat"].r-1phboty:hover {
-  background-color: #2f3e4d !important;
-  border-color: #3a3f47 !important;
+/*grok penceresi kenarlık*/
+.css-175oi2r.r-105ug2t {
+  border: 1px solid rgba(224, 223, 223, 0.5);
 }
 
 /* =======================================
