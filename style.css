@@ -630,3 +630,161 @@
 .dim-x-theme .r-1sw30gj.r-1fuqb1j.r-1ssbvtb {
   background-color: rgba(230, 237, 243, 0.04) !important;
 }
+
+/* =======================================
+   TWEET ARAÇ ÇUBUĞU İKONLARI - KORUMA
+   (Fotoğraf, GIF, Anket, Emoji, Planla vb.)
+   ======================================= */
+
+/* ScrollSnap araç çubuğundaki tüm svg ikonlar */
+.dim-x-theme [data-testid="ScrollSnap-List"] svg,
+.dim-x-theme [data-testid="ScrollSnap-List"] svg path,
+.dim-x-theme [data-testid="ScrollSnap-List"] [dir="ltr"] {
+  color: rgb(29, 155, 240) !important;
+  fill: rgb(29, 155, 240) !important;
+}
+
+/* Buton wrapper'larının arka planına dokunma */
+.dim-x-theme [data-testid="ScrollSnap-List"] button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/* Hover efektini koru */
+.dim-x-theme [data-testid="ScrollSnap-List"] button:hover {
+  background-color: rgba(29, 155, 240, 0.1) !important;
+}
+
+/* Disabled buton (Konum etiketi gibi) soluk kalsın */
+.dim-x-theme [data-testid="ScrollSnap-List"] button:disabled svg,
+.dim-x-theme [data-testid="ScrollSnap-List"] button[aria-disabled="true"] svg {
+  color: rgb(29, 155, 240) !important;
+  fill: rgb(29, 155, 240) !important;
+  opacity: 0.4 !important;
+}
+
+/* =======================================
+   YENİ GÖNDERİLERİ GÖR BUTONU
+   ======================================= */
+
+.dim-x-theme button:has([data-testid="pillLabel"]) {
+  background-color: #1d9bf0 !important;
+  border-color: transparent !important;
+}
+
+.dim-x-theme button:has([data-testid="pillLabel"]):hover {
+  background-color: #1a8cd8 !important;
+}
+
+.dim-x-theme button:has([data-testid="pillLabel"]) svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.dim-x-theme button:has([data-testid="pillLabel"]) [data-testid="pillLabel"] {
+  color: #ffffff !important;
+}
+
+/* =======================================
+   TWEET AKSİYON BUTONLARI - VARSAYILAN GRİ
+   ======================================= */
+
+.dim-x-theme [data-testid="reply"] > div,
+.dim-x-theme [data-testid="retweet"] > div,
+.dim-x-theme [data-testid="like"] > div,
+.dim-x-theme [data-testid="bookmark"] > div {
+  color: #7d909e !important;
+}
+
+.dim-x-theme [data-testid="reply"] svg path,
+.dim-x-theme [data-testid="retweet"] svg path,
+.dim-x-theme [data-testid="like"] svg path,
+.dim-x-theme [data-testid="bookmark"] svg path {
+  fill: #7d909e !important;
+}
+
+.dim-x-theme
+  [data-testid="reply"]
+  [data-testid="app-text-transition-container"]
+  span,
+.dim-x-theme
+  [data-testid="retweet"]
+  [data-testid="app-text-transition-container"]
+  span,
+.dim-x-theme
+  [data-testid="like"]
+  [data-testid="app-text-transition-container"]
+  span {
+  color: #7d909e !important;
+}
+/* Paylaşım butonu ikonu - gri */
+.dim-x-theme [role="group"] button:not([data-testid]) svg path {
+  fill: #7d909e !important;
+}
+/* =======================================
+   GÖRÜNTÜLENme (ANALİTİK) İKON VE SAYI - GRİ
+   ======================================= */
+
+.dim-x-theme a[href*="/analytics"] > div {
+  color: #7d909e !important;
+}
+
+.dim-x-theme a[href*="/analytics"] svg path {
+  fill: #7d909e !important;
+}
+
+.dim-x-theme
+  a[href*="/analytics"]
+  [data-testid="app-text-transition-container"]
+  span {
+  color: #7d909e !important;
+}
+/* =======================================
+   RETWEET AKTİF → YEŞİL
+   ======================================= */
+
+.dim-x-theme [data-testid="unretweet"] > div {
+  color: #00ba7c !important;
+}
+
+.dim-x-theme [data-testid="unretweet"] svg path {
+  fill: #00ba7c !important;
+}
+
+.dim-x-theme
+  [data-testid="unretweet"]
+  [data-testid="app-text-transition-container"]
+  span {
+  color: #00ba7c !important;
+}
+
+/* =======================================
+   BEĞENİ AKTİF → PEMBE
+   ======================================= */
+
+.dim-x-theme [data-testid="unlike"] > div {
+  color: #f91880 !important;
+}
+
+.dim-x-theme [data-testid="unlike"] svg path {
+  fill: #f91880 !important;
+}
+
+.dim-x-theme
+  [data-testid="unlike"]
+  [data-testid="app-text-transition-container"]
+  span {
+  color: #f91880 !important;
+}
+
+/* =======================================
+   YER İŞARETİ AKTİF → MAVİ
+   ======================================= */
+
+.dim-x-theme [data-testid="removeBookmark"] > div {
+  color: #1d9bf0 !important;
+}
+
+.dim-x-theme [data-testid="removeBookmark"] svg path {
+  fill: #1d9bf0 !important;
+}

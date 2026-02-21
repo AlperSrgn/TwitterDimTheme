@@ -1,58 +1,81 @@
 #!/usr/bin/env python3
-"""Twitter Loş Tema ikonları oluştur."""
+"""
+Dim Theme for X — İkon üretici
+Gereksinim: pip install pillow
+Üretilen boyutlar: 16, 32, 48, 128
+"""
 
-from PIL import Image, ImageDraw, ImageFont
 import os
+import sys
 
-def create_icon(size, output_path):
-    # Arka plan
-    img = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+try:
+    from PIL import Image, ImageDraw
+except ImportError:
+    print("Hata: Pillow kütüphanesi bulunamadı.")
+    print("Kurmak için: pip install pillow")
+    sys.exit(1)
+
+
+# -----------------------------------------------------------------------
+# Renk sabitleri
+# -----------------------------------------------------------------------
+BG_COLOR     = (22, 32, 42, 255)    # #16202a
+MOON_COLOR   = (201, 214, 224, 255) # açık gri (ay)
+ACCENT_COLOR = (29, 155, 240, 255)  # #1d9bf0 (mavi nokta)
+
+
+def create_icon(size: int, output_path: str) -> None:
+    """Verilen boyutta tek ikon oluştur ve kaydet."""
+    img  = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
 
-    # Yuvarlak arka plan (#16202a)
-    margin = size * 0.04
+    # --- Yuvarlak arka plan ---
+    margin = max(1, int(size * 0.04))
     draw.rounded_rectangle(
         [margin, margin, size - margin, size - margin],
-        radius=size * 0.22,
-        fill=(22, 32, 42, 255)
+        radius=int(size * 0.22),
+        fill=BG_COLOR,
     )
 
-    # Ay ikonu (beyaz daire - ay şekli)
+    # --- Ay gövdesi (tam daire) ---
     cx, cy = size / 2, size / 2
     r = size * 0.28
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=MOON_COLOR)
 
-    # Tam daire (ay rengi)
+    # --- Ay ısırığı (gölge daire BG renginde, sağ üste kaydırılmış) ---
+    off_x  =  r * 0.38
+    off_y  = -r * 0.20
+    sr     =  r * 0.82
     draw.ellipse(
-        [cx - r, cy - r, cx + r, cy + r],
-        fill=(201, 214, 224, 255)
+        [
+            cx - sr + off_x, cy - sr + off_y,
+            cx + sr + off_x, cy + sr + off_y,
+        ],
+        fill=BG_COLOR,
     )
 
-    # Gölge daire (ay şekli için)
-    offset = r * 0.35
-    shadow_r = r * 0.88
-    draw.ellipse(
-        [cx - shadow_r + offset, cy - shadow_r - offset * 0.3,
-         cx + shadow_r + offset, cy + shadow_r - offset * 0.3],
-        fill=(22, 32, 42, 255)
-    )
-
-    # Alt nokta / accent (mavi)
-    dot_r = size * 0.1
-    dot_x = cx + r * 0.45
-    dot_y = cy + r * 0.7
+    # --- Küçük accent nokta (mavi) ---
+    dot_r = size * 0.09
+    dot_x = cx + r * 0.50
+    dot_y = cy + r * 0.72
     draw.ellipse(
         [dot_x - dot_r, dot_y - dot_r, dot_x + dot_r, dot_y + dot_r],
-        fill=(29, 155, 240, 255)
+        fill=ACCENT_COLOR,
     )
 
-    img.save(output_path, 'PNG')
-    print(f"  ✓ {output_path} ({size}x{size})")
+    img.save(output_path, "PNG")
+    print(f"  ✓ {output_path}  ({size}×{size})")
 
-# icons klasörü
-os.makedirs('icons', exist_ok=True)
 
-print("İkonlar oluşturuluyor...")
-for size in [16, 48, 128]:
-    create_icon(size, f'icons/icon{size}.png')
+def main() -> None:
+    os.makedirs("icons", exist_ok=True)
+    print("İkonlar oluşturuluyor...\n")
 
-print("Tamamlandı!")
+    sizes = [16, 32, 48, 128]
+    for size in sizes:
+        create_icon(size, f"icons/icon{size}.png")
+
+    print("\nTamamlandı!")
+
+if __name__ == "__main__":
+    main()

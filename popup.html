@@ -1,126 +1,236 @@
 <!doctype html>
-<html>
+<html lang="tr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dim Theme</title>
     <style>
-      body {
-        width: 260px;
+      /* ---- Değişkenler ---- */
+      :root {
+        --bg: #16202a;
+        --surface: #1b2733;
+        --surface2: #243241;
+        --border: #2c3d4d;
+        --text: #e7e9ea;
+        --muted: #8b98a5;
+        --accent: #1d9bf0;
+        --accent2: #7856ff;
+        --success: #00ba7c;
+        --error: #f4212e;
+      }
+
+      * {
+        box-sizing: border-box;
         margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 270px;
         padding: 16px;
-        background: #16202a;
-        color: #e7e9ea;
+        background: var(--bg);
+        color: var(--text);
         font-family:
           system-ui,
           -apple-system,
-          Segoe UI,
+          "Segoe UI",
           Roboto,
-          Arial;
+          Arial,
+          sans-serif;
+        font-size: 14px;
       }
 
-      .container {
+      /* ---- Başlık ---- */
+      .header {
         display: flex;
-        flex-direction: column;
-        gap: 14px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
       }
 
       .title {
         font-size: 16px;
-        font-weight: 600;
-        text-align: center;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
 
+      .lang-btn {
+        background: none;
+        border: 1px solid var(--border);
+        color: var(--muted);
+        border-radius: 8px;
+        padding: 3px 8px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .lang-btn:hover {
+        border-color: var(--accent);
+        color: var(--text);
+      }
+
+      /* ---- Site badge ---- */
+      .site-badge {
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 12px;
+        letter-spacing: 0.02em;
+      }
+      .site-badge.ok {
+        background: rgba(0, 186, 124, 0.15);
+        color: var(--success);
+        border: 1px solid rgba(0, 186, 124, 0.3);
+      }
+      .site-badge.error {
+        background: rgba(244, 33, 46, 0.1);
+        color: #ff6b77;
+        border: 1px solid rgba(244, 33, 46, 0.25);
+      }
+
+      /* ---- Kart ---- */
       .card {
-        background: #1b2733;
-        border-radius: 12px;
-        padding: 16px;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-        text-align: center;
+        background: var(--surface);
+        border-radius: 14px;
+        padding: 18px 16px;
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .card-left {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
       }
 
       .status {
         font-size: 13px;
-        opacity: 0.8;
-        margin-bottom: 12px;
+        font-weight: 600;
+        transition: color 0.2s;
+      }
+      .status.active {
+        color: var(--success);
+      }
+      .status.inactive {
+        color: var(--muted);
       }
 
-      /* Toggle Switch */
+      .status-sub {
+        font-size: 11px;
+        color: var(--muted);
+      }
+
+      /* ---- Toggle Switch ---- */
       .switch {
         position: relative;
         display: inline-block;
-        width: 54px;
+        width: 52px;
         height: 28px;
+        flex-shrink: 0;
       }
-
       .switch input {
         display: none;
       }
 
       .slider {
         position: absolute;
-        cursor: pointer;
         inset: 0;
-        background-color: #38444d;
+        background: var(--surface2);
         border-radius: 34px;
-        transition: 0.3s;
+        cursor: pointer;
+        transition: background 0.3s;
+        border: 1px solid var(--border);
       }
-
-      .slider:before {
-        position: absolute;
+      .slider::before {
         content: "";
-        height: 22px;
-        width: 22px;
+        position: absolute;
+        height: 20px;
+        width: 20px;
         left: 3px;
-        bottom: 3px;
-        background-color: white;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--muted);
         border-radius: 50%;
-        transition: 0.3s;
+        transition:
+          transform 0.3s,
+          background 0.3s;
       }
 
       input:checked + .slider {
-        background: linear-gradient(135deg, #1d9bf0, #7856ff);
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+        border-color: transparent;
+      }
+      input:checked + .slider::before {
+        transform: translateY(-50%) translateX(24px);
+        background: #fff;
+      }
+      input:disabled + .slider {
+        opacity: 0.4;
+        cursor: not-allowed;
       }
 
-      input:checked + .slider:before {
-        transform: translateX(26px);
-      }
-
-      .footer {
+      /* ---- Not (X'te değilken) ---- */
+      .not-on-x-note {
         font-size: 11px;
-        opacity: 0.5;
+        color: var(--muted);
+        margin-top: 10px;
+        padding: 10px 12px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        line-height: 1.5;
+        display: none;
+      }
+
+      /* ---- Footer ---- */
+      .footer {
+        margin-top: 14px;
+        font-size: 10px;
+        color: var(--muted);
         text-align: center;
-        margin-top: 6px;
+        opacity: 0.6;
+        letter-spacing: 0.02em;
       }
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <div class="title">
-        🌙 <span id="titleText">Dim Theme</span>
-        <button
-          id="langBtn"
-          style="
-            float: right;
-            background: none;
-            border: none;
-            color: #e7e9ea;
-            cursor: pointer;
-            font-size: 14px;
-          "
-        >
-          🌐
-        </button>
-      </div>
-
-      <div class="card">
-        <div class="status" id="statusText">Loading...</div>
-
-        <label class="switch">
-          <input type="checkbox" id="toggleSwitch" />
-          <span class="slider"></span>
-        </label>
-      </div>
+    <!-- Başlık -->
+    <div class="header">
+      <div class="title">🌙 <span id="titleText">Loş Tema</span></div>
+      <button class="lang-btn" id="langBtn">🌐 TR / EN</button>
     </div>
+
+    <!-- Site durumu -->
+    <div class="site-badge ok" id="siteBadge">X / Twitter'da aktif</div>
+
+    <!-- Ana kart -->
+    <div class="card">
+      <div class="card-left">
+        <div class="status inactive" id="statusText">Devre dışı</div>
+        <div class="status-sub">x.com · twitter.com</div>
+      </div>
+
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- X'te değilken görünen not -->
+    <div class="not-on-x-note" id="notOnXNote">
+      Bu eklenti yalnızca x.com / twitter.com adreslerinde çalışır.
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Dim Theme v1.1</div>
 
     <script src="popup.js"></script>
   </body>
