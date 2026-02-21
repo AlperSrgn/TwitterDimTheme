@@ -788,3 +788,498 @@
 .dim-x-theme [data-testid="removeBookmark"] svg path {
   fill: #1d9bf0 !important;
 }
+
+/* =======================================
+   YENİ MESAJ MODALI
+   ======================================= */
+
+/* Modal arka plan ve kenarlık */
+.dim-x-theme [role="dialog"] {
+  background-color: #16202a !important;
+  border-color: #22303c !important;
+}
+
+/* Başlık "Yeni mesaj" */
+.dim-x-theme [role="dialog"] h2,
+.dim-x-theme [role="dialog"] h2 div {
+  color: #e6edf3 !important;
+}
+
+/* Kapat butonu ikonu */
+.dim-x-theme [role="dialog"] button svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+
+/* Kapat butonu hover */
+.dim-x-theme [role="dialog"] button:hover {
+  background-color: rgba(230, 237, 243, 0.1) !important;
+}
+
+/* Arama kutusu kapsayıcı */
+.dim-x-theme [role="dialog"] .border.border-solid.border-gray-200 {
+  background-color: #1e2732 !important;
+  border-color: #2f3b45 !important;
+}
+
+/* Arama kutusu focus */
+.dim-x-theme [role="dialog"] .border.border-solid:focus-within {
+  border-color: #1d9bf0 !important;
+  background-color: transparent !important;
+}
+
+/* Arama ikonu */
+.dim-x-theme [role="dialog"] [data-icon="icon-search-stroke"] {
+  color: #8b98a5 !important;
+}
+
+/* Input yazı ve placeholder */
+.dim-x-theme [data-testid="new-dm-search-input"] {
+  color: #e6edf3 !important;
+}
+.dim-x-theme [data-testid="new-dm-search-input"]::placeholder {
+  color: #8b98a5 !important;
+}
+
+/* Grup oluştur butonu */
+.dim-x-theme [data-testid="new-dm-create-group-button"] {
+  color: #1d9bf0 !important;
+}
+.dim-x-theme [data-testid="new-dm-create-group-button"] svg {
+  color: #1d9bf0 !important;
+  stroke: #1d9bf0 !important;
+}
+.dim-x-theme [data-testid="new-dm-create-group-button"]:hover {
+  background-color: rgba(29, 155, 240, 0.1) !important;
+}
+
+/* Kullanıcı listesi - her satır */
+.dim-x-theme [data-testid^="new-dm-user-suggestion"] {
+  background-color: transparent !important;
+}
+.dim-x-theme [data-testid^="new-dm-user-suggestion"]:hover {
+  background-color: #1e2732 !important;
+}
+
+/* Kullanıcı adı (bold) */
+.dim-x-theme [data-testid^="new-dm-user-suggestion"] .text-text {
+  color: #e6edf3 !important;
+}
+
+/* @kullanıcıadı (gri) */
+.dim-x-theme [data-testid^="new-dm-user-suggestion"] .text-gray-700 {
+  color: #8b98a5 !important;
+}
+/* =======================================
+   ONAY ROZETLERİ - ORİJİNAL RENKLERİ KORU
+   ======================================= */
+
+/* Mavi tik */
+.dim-x-theme [data-icon="icon-verified"] {
+  color: #1d9bf0 !important;
+  fill: #1d9bf0 !important;
+}
+
+/* Altın tik - gradient kullandığı için fill'i sıfırlama */
+.dim-x-theme [data-icon="icon-verified-gold"] {
+  fill: unset !important;
+  color: unset !important;
+}
+
+/* =======================================
+   DM SOHBET PROFİL KARTI
+   ======================================= */
+
+/* Kullanıcı adı (bold başlık) */
+.dim-x-theme .text-headline2.font-bold {
+  color: #e6edf3 !important;
+}
+
+/* @kullanıcıadı ve katılım tarihi */
+.dim-x-theme .text-headline2 ~ .text-gray-700,
+.dim-x-theme [class*="text-gray-700"].text-body {
+  color: #8b98a5 !important;
+}
+
+/* "Profili Görüntüle" butonu */
+.dim-x-theme button.bg-text {
+  background-color: #e6edf3 !important;
+  color: #0f1419 !important;
+  border-color: transparent !important;
+}
+
+.dim-x-theme button.bg-text:hover {
+  background-color: #cfd9e2 !important;
+}
+/* =======================================
+   DM COMPOSER - MESAJ YAZMA ALANI
+   ======================================= */
+
+/* Ana kapsayıcı */
+.dim-x-theme [data-testid="dm-composer-container"] {
+  background-color: transparent !important;
+}
+
+/* + / GIF / Emoji butonları */
+.dim-x-theme [data-testid="dm-composer-attachment-button"],
+.dim-x-theme [data-testid="dm-composer-gif-button"],
+.dim-x-theme [data-testid="dm-composer-emoji-button"] {
+  background-color: #1e2732 !important;
+  color: #e6edf3 !important;
+  border-color: transparent !important;
+}
+
+.dim-x-theme [data-testid="dm-composer-attachment-button"]:hover,
+.dim-x-theme [data-testid="dm-composer-gif-button"]:hover,
+.dim-x-theme [data-testid="dm-composer-emoji-button"]:hover {
+  background-color: #243241 !important;
+}
+
+.dim-x-theme [data-testid="dm-composer-attachment-button"] svg,
+.dim-x-theme [data-testid="dm-composer-gif-button"] svg,
+.dim-x-theme [data-testid="dm-composer-emoji-button"] svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+
+/* Textarea kapsayıcı */
+.dim-x-theme [data-testid="dm-composer-input-container"] {
+  background-color: #1e2732 !important;
+}
+
+/* Textarea */
+.dim-x-theme [data-testid="dm-composer-textarea"] {
+  color: #e6edf3 !important;
+  caret-color: #e6edf3 !important;
+}
+
+.dim-x-theme [data-testid="dm-composer-textarea"]::placeholder {
+  color: #8b98a5 !important;
+}
+
+/* DM başlık - kullanıcı adı */
+.dim-x-theme .text-headline2.font-medium {
+  color: #e6edf3 !important;
+}
+/* =======================================
+   DM EKRANI - ÜST BLUR GEÇİŞ KATMANI
+   ======================================= */
+
+/* Son katman - gradient arka plan */
+.dim-x-theme
+  [data-testid="dm-composer-container"]
+  ~ .absolute.-z-10
+  > div:last-child,
+.dim-x-theme .absolute.inset-0.-z-10 > div:last-child {
+  background: linear-gradient(360deg, transparent 0%, #16202a 100%) !important;
+}
+
+/* CSS değişkeni fallback olarak tanımla */
+.dim-x-theme {
+  --color-background: 214 23% 13%;
+}
+/* =======================================
+   DM COMPOSER - ALT BLUR GEÇİŞ KATMANI
+   ======================================= */
+
+.dim-x-theme .from-transparent.via-background\/80.to-background {
+  --tw-gradient-from: transparent !important;
+  --tw-gradient-via: rgba(22, 32, 42, 0.8) !important;
+  --tw-gradient-to: #16202a !important;
+}
+
+/* =======================================
+   DM SOHBET BAŞLIĞI - GERİ ve DAHA FAZLA BUTONLARI
+   ======================================= */
+
+/* Geri ve üç nokta butonları */
+.dim-x-theme [data-testid="dm-conversation-back-button"],
+.dim-x-theme [data-testid="dm-conversation-more-button"] {
+  background-color: transparent !important;
+  color: #e6edf3 !important;
+  border-color: transparent !important;
+}
+
+.dim-x-theme [data-testid="dm-conversation-back-button"]:hover,
+.dim-x-theme [data-testid="dm-conversation-more-button"]:hover {
+  background-color: rgba(230, 237, 243, 0.1) !important;
+}
+
+.dim-x-theme [data-testid="dm-conversation-back-button"] svg,
+.dim-x-theme [data-testid="dm-conversation-more-button"] svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+
+/* Kullanıcı adı */
+.dim-x-theme [data-testid="dm-conversation-back-button"] ~ div .text-headline2 {
+  color: #e6edf3 !important;
+}
+
+/* =======================================
+   DM SOHBET DETAY MODALI
+   ======================================= */
+
+/* Modal arka plan */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl {
+  border-color: #22303c !important;
+}
+
+/* Geri ve düzenle butonları */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl button.bg-transparent {
+  color: #e6edf3 !important;
+}
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl button.bg-transparent svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+  stroke: #e6edf3 !important;
+}
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl button.bg-transparent:hover {
+  background-color: rgba(230, 237, 243, 0.1) !important;
+}
+
+/* Kullanıcı adı */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .text-headline1.font-bold {
+  color: #e6edf3 !important;
+}
+
+/* @kullanıcıadı */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .text-gray-700 {
+  color: #8b98a5 !important;
+}
+
+/* Ses / Video / Profil / Daha fazla butonları */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl button.bg-gray-50 {
+  background-color: #1e2732 !important;
+  color: #e6edf3 !important;
+}
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl button.bg-gray-50:hover {
+  background-color: #243241 !important;
+}
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl button.bg-gray-50 svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+  stroke: #e6edf3 !important;
+}
+
+/* Buton etiketleri (Ses, Video, Profil...) */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .text-text.text-body {
+  color: #e6edf3 !important;
+}
+
+/* Liste öğeleri (Kaybolan Mesajlar, Ekran Görüntüsü...) */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .flex.flex-row.bg-gray-50 {
+  background-color: #1e2732 !important;
+  border-color: #22303c !important;
+}
+.dim-x-theme
+  .bg-gray-0.border-gray-50.rounded-3xl
+  .flex.flex-row.bg-gray-50:hover {
+  background-color: #243241 !important;
+}
+
+/* Liste ikon ve ok rengi */
+.dim-x-theme
+  .bg-gray-0.border-gray-50.rounded-3xl
+  .flex.flex-row.bg-gray-50
+  svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+  stroke: #e6edf3 !important;
+}
+
+/* "Kapalı" yazısı */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .text-gray-700.text-body {
+  color: #8b98a5 !important;
+}
+
+/* Mesajları Engelle - kırmızı korunsun */
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .text-red-500 {
+  color: #f4212e !important;
+}
+.dim-x-theme
+  .bg-gray-0.border-gray-50.rounded-3xl
+  .flex.flex-row.text-red-500
+  svg {
+  color: #f4212e !important;
+  fill: #f4212e !important;
+}
+.dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .flex.flex-row.text-red-500 {
+  background-color: #1e2732 !important;
+}
+.dim-x-theme
+  .bg-gray-0.border-gray-50.rounded-3xl
+  .flex.flex-row.text-red-500:hover {
+  background-color: rgba(244, 33, 46, 0.1) !important;
+}
+
+/* Liste öğeleri arasındaki ayırıcı çizgi */
+.dim-x-theme
+  .bg-gray-0.border-gray-50.rounded-3xl
+  [class*="after:bg-gray-100"]::after {
+  background-color: #22303c !important;
+}
+
+/* =======================================
+   DM SOHBET - "DAHA FAZLA" POPOVER MENÜSÜ
+   ======================================= */
+
+/* Menü arka plan ve kenarlık */
+.dim-x-theme .bg-gray-50.border-gray-100.rounded-xl {
+  background-color: #1e2732 !important;
+  border-color: #22303c !important;
+}
+
+/* Menü butonları */
+.dim-x-theme .bg-gray-50.border-gray-100.rounded-xl button {
+  background-color: #1e2732 !important;
+  color: #e6edf3 !important;
+}
+
+.dim-x-theme .bg-gray-50.border-gray-100.rounded-xl button:hover {
+  background-color: #243241 !important;
+}
+
+/* İkonlar */
+.dim-x-theme .bg-gray-50.border-gray-100.rounded-xl button svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+
+/* Kırmızı butonlar - Sohbeti sil, Sohbeti bildir */
+.dim-x-theme .bg-gray-50.border-gray-100.rounded-xl button.text-red-500 {
+  color: #f4212e !important;
+}
+
+.dim-x-theme .bg-gray-50.border-gray-100.rounded-xl button.text-red-500:hover {
+  background-color: rgba(244, 33, 46, 0.1) !important;
+}
+
+.dim-x-theme .bg-gray-50.border-gray-100.rounded-xl button.text-red-500 svg {
+  color: #f4212e !important;
+  fill: #f4212e !important;
+}
+/* =======================================
+   ONAY DİYALOĞU BUTONLARI
+   ======================================= */
+
+/* İptal butonu */
+.dim-x-theme button.bg-background.text-text {
+  background-color: #1e2732 !important;
+  color: #e6edf3 !important;
+  border-color: #22303c !important;
+}
+
+.dim-x-theme button.bg-background.text-text:hover {
+  background-color: #243241 !important;
+}
+
+/* Onayla butonu - kırmızı korunsun */
+.dim-x-theme button.bg-red-500 {
+  background-color: #f4212e !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+.dim-x-theme button.bg-red-500:hover {
+  background-color: #d91a27 !important;
+}
+
+/* =======================================
+   DM AYARLAR SAYFASI
+   ======================================= */
+
+/* Arka plan ve başlık çubuğu */
+.dim-x-theme .bg-background {
+  background-color: #16202a !important;
+}
+
+/* Başlık yazısı ve genel metin */
+.dim-x-theme .text-title4.font-bold,
+.dim-x-theme .text-body.font-medium,
+.dim-x-theme .text-body.font-normal {
+  color: #e6edf3 !important;
+}
+
+/* İkincil açıklama metinleri */
+.dim-x-theme .text-subtext2.font-normal {
+  color: #8b98a5 !important;
+}
+
+/* Bölüm ayırıcı çizgiler */
+.dim-x-theme .border-t {
+  border-color: #22303c !important;
+}
+
+/* Radio butonları - seçilmemiş */
+.dim-x-theme [role="radio"][data-state="unchecked"] {
+  border-color: #8b98a5 !important;
+  background-color: transparent !important;
+}
+
+/* Radio butonları - seçili */
+.dim-x-theme [role="radio"][data-state="checked"] {
+  border-color: #1d9bf0 !important;
+}
+.dim-x-theme [role="radio"][data-state="checked"] svg {
+  color: #1d9bf0 !important;
+  fill: #1d9bf0 !important;
+}
+
+/* Checkbox - seçilmemiş */
+.dim-x-theme [role="checkbox"][data-state="unchecked"] {
+  border-color: #8b98a5 !important;
+  background-color: transparent !important;
+}
+
+/* Checkbox - seçili */
+.dim-x-theme [role="checkbox"][data-state="checked"] {
+  background-color: #1d9bf0 !important;
+  border-color: #1d9bf0 !important;
+}
+
+/* Toggle switch - kapalı */
+.dim-x-theme [role="switch"][data-state="unchecked"] {
+  background-color: #536471 !important;
+}
+.dim-x-theme [role="switch"][data-state="unchecked"] span {
+  background-color: #e6edf3 !important;
+}
+
+/* Toggle switch - açık */
+.dim-x-theme [role="switch"][data-state="checked"] {
+  background-color: #1d9bf0 !important;
+}
+.dim-x-theme [role="switch"][data-state="checked"] span {
+  background-color: #ffffff !important;
+}
+
+/* Şifreyi değiştir satırı */
+.dim-x-theme button.hover\:bg-gray-50 {
+  background-color: transparent !important;
+  color: #e6edf3 !important;
+}
+.dim-x-theme button.hover\:bg-gray-50:hover {
+  background-color: #1e2732 !important;
+}
+.dim-x-theme button.hover\:bg-gray-50 svg {
+  color: #8b98a5 !important;
+}
+
+/* Geri butonu */
+.dim-x-theme button.bg-transparent.text-text svg {
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+
+/* PIN ikonu - tüm path'ler tema rengi */
+.dim-x-theme svg[data-icon="icon-passcode"] path {
+  stroke: #e6edf3 !important;
+  fill: none !important;
+}
+
+/* Dolu noktalar (fill olan path'ler) */
+.dim-x-theme svg[data-icon="icon-passcode"] path[fill="currentColor"] {
+  fill: #e6edf3 !important;
+  stroke: #e6edf3 !important;
+}
