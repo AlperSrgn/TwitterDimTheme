@@ -1283,3 +1283,12 @@
   fill: #e6edf3 !important;
   stroke: #e6edf3 !important;
 }
+
+/* =======================================
+   ONAYLI HESAP UPSELL KARTI
+   ======================================= */
+
+/* Kart arka planı */
+.dim-x-theme [data-testid="verified_profile_visitor_upsell"] {
+  background-color: #104728 !important;
+}
