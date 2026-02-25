@@ -359,7 +359,6 @@
   .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
   button.css-175oi2r.r-1phboty:hover {
   background-color: #2f3e4d !important;
-  border-color: #3a3f47 !important;
 }
 /*grok penceresi kenarlık*/
 /*.css-175oi2r.r-105ug2t {
@@ -471,7 +470,7 @@
 /* pasif sekmeler */
 .dim-x-theme [data-testid="dm-inbox-tabs-list"] button {
   color: #8b98a5 !important;
-  border: 1px solid #2f3b45 !important;
+  border-color: #2f3b45 !important;
   background: transparent !important;
 }
 
@@ -1291,4 +1290,24 @@
 /* Kart arka planı */
 .dim-x-theme [data-testid="verified_profile_visitor_upsell"] {
   background-color: #104728 !important;
+}
+
+/* =======================================
+   GROK BETA ETİKETİ
+   ======================================= */
+
+.dim-x-theme .r-z2wwpe.r-vhh4mp span {
+  color: #1d9bf0 !important;
+}
+
+.dim-x-theme .r-z2wwpe.r-vhh4mp {
+  background-color: rgba(29, 155, 240, 0.1) !important;
+}
+
+/* =======================================
+   YER İŞARETLERİ BAŞLIĞI
+   ======================================= */
+
+.dim-x-theme h2.r-1559e4e {
+  color: #e6edf3 !important;
 }
