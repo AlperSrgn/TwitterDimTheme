@@ -18,7 +18,7 @@
   background-color: #16202a !important;
 }
 .dim-x-theme section,
-.dim-x-theme div[class*="r-1wtj0ep"],
+/*.dim-x-theme div[class*="r-1wtj0ep"],*/
 .dim-x-theme div[class*="r-1mmae3n"],
 .dim-x-theme div[class*="r-3pj75a"],
 .dim-x-theme div[class*="r-w7s2jr"],
@@ -1310,4 +1310,30 @@
 
 .dim-x-theme h2.r-1559e4e {
   color: #e6edf3 !important;
+}
+
+/* =======================================
+   ANKET / OY SONUÇLARI LİSTESİ
+   ======================================= */
+
+/* Seçenek metni ve yüzde */
+.dim-x-theme .r-1mkv55d div[dir="ltr"],
+.dim-x-theme .r-2dysd3 div[dir="ltr"] {
+  color: #e6edf3 !important;
+}
+
+.dim-x-theme .r-1mkv55d span,
+.dim-x-theme .r-2dysd3 span {
+  color: #e6edf3 !important;
+}
+
+/* Seçili seçenek onay ikonu */
+.dim-x-theme .r-1mkv55d svg[aria-label="Seçili"] path {
+  fill: #e6edf3 !important;
+}
+
+/* Oy çubuğu arka planı */
+.dim-x-theme .r-hv4q04.r-1nna3df {
+  background-color: #1d9bf0 !important;
+  opacity: 0.3 !important;
 }
