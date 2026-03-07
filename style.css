@@ -1337,3 +1337,17 @@
   background-color: #1d9bf0 !important;
   opacity: 0.3 !important;
 }
+
+/* =======================================
+   "X gönderiyi göster" butonu
+   ======================================= */
+.dim-x-theme button.r-1pl7oy7 div[style*="color: rgb(29, 155, 240)"] span {
+  color: #1d9bf0 !important;
+}
+
+/* =======================================
+   "Daha fazla göster" linkleri
+   ======================================= */
+.dim-x-theme a.r-w7s2jr.r-3pj75a div[style*="color: rgb(29, 155, 240)"] span {
+  color: #1d9bf0 !important;
+}
