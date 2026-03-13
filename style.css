@@ -34,9 +34,25 @@
 /* =======================================
    SOL MENÜ
    ======================================= */
+
 /* menu item hover */
-.dim-x-theme nav[aria-label="Birincil"] a:hover {
-  background-color: #1b2733 !important;
+.dim-x-theme header nav a:hover,
+.dim-x-theme header nav button:hover {
+  background-color: #243241 !important;
+  border-radius: 999px;
+}
+/* =======================================
+   SOL MENÜ - HOVER EFEKTİ
+   ======================================= */
+
+.dim-x-theme header nav a:hover,
+.dim-x-theme header nav button:hover {
+  background-color: transparent !important;
+}
+
+.dim-x-theme header nav a:hover > div,
+.dim-x-theme header nav button:hover > div {
+  background-color: #243241 !important;
   border-radius: 999px;
 }
 
@@ -79,6 +95,37 @@
    ======================================= */
 .dim-x-theme * {
   border-color: #22303c !important;
+}
+
+/* =======================================
+   SEARCH BAR - DIŞ BORDER GİZLE
+   ======================================= */
+
+.dim-x-theme .r-42olwf.r-1phboty.r-rs99b7 {
+  border-color: #16202a !important;
+}
+/* =======================================
+   GROK - GEÇMİŞ / ÖZEL BUTON BORDERLAR
+   ======================================= */
+
+.dim-x-theme .r-1q9bdsx.r-15ysp7h.r-4wgw6l.r-3pj75a {
+  border-color: #16202a !important;
+}
+/* =======================================
+   TWEET YAZMA ALANI - DIŞ BORDER GİZLE
+   ======================================= */
+
+.dim-x-theme .r-z2wwpe.r-1phboty.r-d045u9 {
+  border-color: #16202a !important;
+}
+/* =======================================
+   PROFİL SEKMELERİ - HOVER YUVARLAK BORDER GİZLE
+   ======================================= */
+
+.dim-x-theme [role="tab"].r-s8bhmr:hover,
+.dim-x-theme [role="tab"].r-s8bhmr:focus {
+  border-radius: 0 !important;
+  border-color: transparent !important;
 }
 
 /* =======================================
@@ -564,7 +611,8 @@
   color: #e6edf3 !important;
   fill: currentColor !important;
 }
-/* Sohbet sekmeleri metin + ikon */
+/* 
+Sohbet sekmeleri metin + ikon
 .dim-x-theme button[aria-label="Sohbet geçmişi"],
 .dim-x-theme button[aria-label="Özel"] {
   color: #e6edf3 !important;
@@ -575,10 +623,12 @@
   color: #e6edf3 !important;
   fill: currentColor !important;
 }
+
 .dim-x-theme button[aria-label="Sohbet geçmişi"]:hover,
 .dim-x-theme button[aria-label="Özel"]:hover {
   background-color: rgba(143, 179, 217, 0.12) !important;
 }
+*/
 .dim-x-theme span.css-1jxf684.r-poiln3 {
   color: #e6edf3 !important;
 }
@@ -1327,11 +1377,6 @@
   color: #e6edf3 !important;
 }
 
-/* Seçili seçenek onay ikonu */
-.dim-x-theme .r-1mkv55d svg[aria-label="Seçili"] path {
-  fill: #e6edf3 !important;
-}
-
 /* Oy çubuğu arka planı */
 .dim-x-theme .r-hv4q04.r-1nna3df {
   background-color: #1d9bf0 !important;
@@ -1350,4 +1395,59 @@
    ======================================= */
 .dim-x-theme a.r-w7s2jr.r-3pj75a div[style*="color: rgb(29, 155, 240)"] span {
   color: #1d9bf0 !important;
+}
+
+/* =======================================
+   Tema seçici - "Varsayılan" yazı rengi
+   ======================================= */
+.dim-x-theme div[style*="background-color: rgb(255, 255, 255)"] span.r-poiln3 {
+  color: #0f1419 !important;
+}
+
+/* =======================================
+   Typeahead - klavye navigasyon hover
+   ======================================= */
+.dim-x-theme [data-testid="typeaheadResult"] [aria-selected="true"] > div,
+.dim-x-theme [role="option"][aria-selected="true"] > div > button {
+  background-color: #243241 !important;
+}
+
+/* =======================================
+   Sayfa içi Scrollbar
+   ======================================= */
+.dim-x-theme * {
+  scrollbar-color: #2f3e4d #16202a;
+}
+.dim-x-theme *::-webkit-scrollbar-track {
+  background-color: #16202a;
+}
+.dim-x-theme *::-webkit-scrollbar-thumb {
+  background-color: #2f3e4d;
+}
+.dim-x-theme *::-webkit-scrollbar-thumb:hover {
+  background-color: #3a4c5e;
+}
+
+/* =======================================
+   Gönderiyi Çevir butonları
+   ======================================= */
+.dim-x-theme button.r-fdjqy7[style*="color: rgb(29, 155, 240)"],
+.dim-x-theme button.r-fdjqy7[style*="color: rgb(29, 155, 240)"] span {
+  color: rgb(29, 155, 240) !important;
+}
+
+/* =======================================
+   SİLME ONAY DİYALOĞU
+   ======================================= */
+/* Başlık */
+.dim-x-theme [data-testid="confirmationSheetDialog"] h1 {
+  color: #e7e9ea !important;
+}
+
+/* =======================================
+   CHECKBOX KENARLIKLARI
+   ======================================= */
+
+.dim-x-theme .r-z2wwpe.r-1phboty.r-d045u9.r-19wmn03 {
+  border-color: #22303c !important;
 }
