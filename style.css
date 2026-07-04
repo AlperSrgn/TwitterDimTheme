@@ -102,21 +102,21 @@
    ======================================= */
 
 .dim-x-theme .r-42olwf.r-1phboty.r-rs99b7 {
-  border-color: #16202a !important;
+  border-color: transparent !important;
 }
 /* =======================================
    GROK - GEÇMİŞ / ÖZEL BUTON BORDERLAR
    ======================================= */
 
 .dim-x-theme .r-1q9bdsx.r-15ysp7h.r-4wgw6l.r-3pj75a {
-  border-color: #16202a !important;
+  border-color: transparent !important;
 }
 /* =======================================
    TWEET YAZMA ALANI - DIŞ BORDER GİZLE
    ======================================= */
 
 .dim-x-theme .r-z2wwpe.r-1phboty.r-d045u9 {
-  border-color: #16202a !important;
+  border-color: transparent !important;
 }
 /* =======================================
    PROFİL SEKMELERİ - HOVER YUVARLAK BORDER GİZLE
@@ -247,13 +247,18 @@
 /* =====================================
    Sağ alt köşe Chat Drawer butonu
 ===================================== */
-.dim-x-theme [data-testid="chat-drawer-main"] .rounded-2xl {
+.dim-x-theme [data-testid="chat-drawer-main"] {
   background-color: #1b2733 !important;
-  color: #ffffff !important;
+  border-color: #22303c !important;
 }
-.dim-x-theme [data-testid="chat-drawer-main"] .rounded-2xl:hover {
+
+.dim-x-theme [data-testid="chat-drawer-main"] svg {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+
+.dim-x-theme [data-testid="chat-drawer-main"]:hover {
   background-color: #243241 !important;
-  border-color: #3a4c5e !important;
 }
 
 /* =====================================
@@ -262,14 +267,14 @@
 
 /* header arka plan */
 .dim-x-theme [data-testid="GrokDrawerHeader"] {
-  background-color: #1b2733 !important;
+  background-color: #16202a !important;
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] svg {
   color: #ffffff !important;
   fill: currentColor !important;
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] button:hover {
-  background-color: #243241 !important;
+  background-color: #16202a !important;
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] button:hover svg {
   color: #8fb3d9 !important;
@@ -396,7 +401,7 @@
 .dim-x-theme
   .css-175oi2r.r-1awozwy.r-1g4g62n.r-yn5ncy.r-clrlgt.r-1ec6tlx.r-6koalj.r-18u37iz.r-1w6e6rj.r-1ssbvtb.r-1777fci.r-13qz1uu
   button.css-175oi2r.r-1phboty {
-  background-color: #16202a !important;
+  background-color: transparent !important;
   color: #eff3f4 !important;
   border-color: #3a3f47 !important;
 }
@@ -1450,4 +1455,200 @@ Sohbet sekmeleri metin + ikon
 
 .dim-x-theme .r-z2wwpe.r-1phboty.r-d045u9.r-19wmn03 {
   border-color: #22303c !important;
+}
+
+/* =======================================
+   ZAMAN AKIŞLARINI YÖNET BUTONU
+   ======================================= */
+
+.dim-x-theme div.r-1h3ijdo {
+  background-color: #16202a !important;
+}
+
+.dim-x-theme button.r-1wron08.r-peo1c {
+  color: #e6edf3 !important;
+  border-color: transparent !important;
+}
+
+.dim-x-theme button.r-1wron08.r-peo1c svg {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+
+.dim-x-theme button.r-1wron08.r-peo1c:hover {
+  background-color: rgba(230, 237, 243, 0.1) !important;
+}
+
+/* =======================================
+   DÜNYA KUPASI / SPOR WIDGET (JetFuel)
+   ======================================= */
+
+/* Tüm kapsayıcılar */
+.dim-x-theme .jetfuel-style-root,
+.dim-x-theme .jetfuel-style-root .jf-element {
+  background-color: #16202a !important;
+  color: #e6edf3 !important;
+}
+
+/* Metin elementleri */
+.dim-x-theme .jetfuel-style-root p,
+.dim-x-theme .jetfuel-style-root div.text-text {
+  color: #e6edf3 !important;
+}
+
+/* Maç satırı butonları */
+.dim-x-theme .jetfuel-style-root button.jfa278c0 {
+  background-color: #16202a !important;
+  border-color: transparent !important;
+  color: #e6edf3 !important;
+}
+
+.dim-x-theme .jetfuel-style-root button.jfa278c0:hover {
+  background-color: #1b2733 !important;
+}
+
+/* Kategori butonu (Futbol) */
+.dim-x-theme .jetfuel-style-root button.jnq64s60 {
+  background-color: #16202a !important;
+  color: #e6edf3 !important;
+}
+
+/* Ayırıcı çizgiler */
+.dim-x-theme .jetfuel-style-root .j-tfoedk0 {
+  background-color: #22303c !important;
+}
+
+/* Skor göstergesi (play ikonu) */
+.dim-x-theme .jetfuel-style-root svg {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+
+/* =======================================
+   SPOR WİDGET - DAHA FAZLA GÖSTER BUTONU
+   (tema etkisinden muaf)
+   ======================================= */
+
+.dim-x-theme .jetfuel-style-root button.jrg0orv0,
+.dim-x-theme .jetfuel-style-root button.jrg0orv0 * {
+  background-color: unset !important;
+  color: unset !important;
+  border-color: unset !important;
+}
+
+/* =======================================
+   SPOR WİDGET - İSTATİSTİK ÇIZGILERI
+   ======================================= */
+
+/* Turuncu çizgi (ev sahibi) */
+.dim-x-theme .jetfuel-style-root .j-8cazgz0,
+.dim-x-theme .jetfuel-style-root .j-omf0vx0 {
+  background-color: #f4812a !important;
+}
+
+/* Yeşil çizgi (deplasman) */
+.dim-x-theme .jetfuel-style-root .jqaimr20,
+.dim-x-theme .jetfuel-style-root .jlftd5a0 {
+  background-color: #4caf50 !important;
+}
+
+/* 0-0 durumu - gri arka plan çizgisi */
+.dim-x-theme .jetfuel-style-root .jqjp5430.jtxbkui12:not(.j-fxfghq0) {
+  background-color: #2f3e4d !important;
+  height: 4px !important;
+}
+
+/* =======================================
+   SPOR WİDGET - SEKME AKTİF ÇIZGISI
+   ======================================= */
+
+/* Aktif sekme çizgisi */
+.dim-x-theme .jetfuel-style-root .j4s5asy0 {
+  background-color: #1d9bf0 !important;
+}
+
+/* Pasif sekme çizgisi (görünmez kalmalı) */
+.dim-x-theme .jetfuel-style-root .j-72iudk0 {
+  background-color: transparent !important;
+}
+
+/* =======================================
+   SPOR WİDGET - W/L/B DURUM RENKLERI
+   ======================================= */
+
+/* W - yeşil */
+.dim-x-theme .jetfuel-style-root .jozit080.j5qahnl0 {
+  background-color: #1a7a3e !important;
+}
+
+.dim-x-theme .jetfuel-style-root .jozit080.j5qahnl0 p {
+  color: #ffffff !important;
+}
+
+/* L - kırmızı */
+.dim-x-theme .jetfuel-style-root .jozit080.j-hipvmy0 {
+  background-color: #7a1a1a !important;
+}
+
+.dim-x-theme .jetfuel-style-root .jozit080.j-hipvmy0 p {
+  color: #ffffff !important;
+}
+
+/* B - beraberlik */
+.dim-x-theme .jetfuel-style-root .jozit080.j-wx3tpz0 {
+  background-color: #3a4a5a !important;
+}
+
+.dim-x-theme .jetfuel-style-root .jozit080.j-wx3tpz0 p {
+  color: #ffffff !important;
+}
+.dim-x-theme .jetfuel-style-root .jozit080 .j-dlswat0,
+.dim-x-theme .jetfuel-style-root .jozit080 .j-dlswat0 p {
+  background-color: transparent !important;
+}
+
+/* =======================================
+   SPOR WİDGET - İKİLİ KARŞILAŞTIRMA
+   ======================================= */
+
+/* Başlık */
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .j-dlswat0 p {
+  color: #e6edf3 !important;
+}
+
+/* Kazandı/Beraberlik etiketleri */
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .j-azowe50 p {
+  color: #8b98a5 !important;
+}
+
+/* Sayı renkleri - kırmızı (L) */
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .j-hipvmy0.jdcgpf20 {
+  background-color: transparent !important;
+  color: #f4212e !important;
+}
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .j-hipvmy0.jdcgpf20 p {
+  color: #f4212e !important;
+}
+
+/* Sayı renkleri - yeşil (W) */
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .j-4cbjpq0.jdcgpf20 {
+  background-color: transparent !important;
+  color: #00ba7c !important;
+}
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .j-4cbjpq0.jdcgpf20 p {
+  color: #00ba7c !important;
+}
+
+/* Sayı renkleri - beraberlik */
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .joey3l40.jdcgpf20 {
+  background-color: transparent !important;
+  color: #8b98a5 !important;
+}
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .joey3l40.jdcgpf20 p {
+  color: #8b98a5 !important;
+}
+
+/* Karşılaştırma çizgisi */
+.dim-x-theme .jetfuel-style-root .jt6t7a70 .j-4cbjpq0.jfa278c0 {
+  background-color: #00ba7c !important;
 }
