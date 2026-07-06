@@ -1483,9 +1483,9 @@ Sohbet sekmeleri metin + ikon
    DÜNYA KUPASI / SPOR WIDGET (JetFuel)
    ======================================= */
 
-/* Tüm kapsayıcılar */
 .dim-x-theme .jetfuel-style-root,
-.dim-x-theme .jetfuel-style-root .jf-element {
+.dim-x-theme .jetfuel-style-root > .jf-element,
+.dim-x-theme .jetfuel-style-root > .jf-element > .jf-element {
   background-color: #16202a !important;
   color: #e6edf3 !important;
 }
@@ -1518,137 +1518,116 @@ Sohbet sekmeleri metin + ikon
   background-color: #22303c !important;
 }
 
-/* Skor göstergesi (play ikonu) */
+/* İkonlar */
 .dim-x-theme .jetfuel-style-root svg {
   color: #e6edf3 !important;
   fill: currentColor !important;
 }
 
 /* =======================================
-   SPOR WİDGET - DAHA FAZLA GÖSTER BUTONU
-   (tema etkisinden muaf)
-   ======================================= */
-
-.dim-x-theme .jetfuel-style-root button.jrg0orv0,
-.dim-x-theme .jetfuel-style-root button.jrg0orv0 * {
-  background-color: unset !important;
-  color: unset !important;
-  border-color: unset !important;
-}
-
-/* =======================================
-   SPOR WİDGET - İSTATİSTİK ÇIZGILERI
-   ======================================= */
-
-/* Turuncu çizgi (ev sahibi) */
-.dim-x-theme .jetfuel-style-root .j-8cazgz0,
-.dim-x-theme .jetfuel-style-root .j-omf0vx0 {
-  background-color: #f4812a !important;
-}
-
-/* Yeşil çizgi (deplasman) */
-.dim-x-theme .jetfuel-style-root .jqaimr20,
-.dim-x-theme .jetfuel-style-root .jlftd5a0 {
-  background-color: #4caf50 !important;
-}
-
-/* 0-0 durumu - gri arka plan çizgisi */
-.dim-x-theme .jetfuel-style-root .jqjp5430.jtxbkui12:not(.j-fxfghq0) {
-  background-color: #2f3e4d !important;
-  height: 4px !important;
-}
-
-/* =======================================
    SPOR WİDGET - SEKME AKTİF ÇIZGISI
    ======================================= */
 
-/* Aktif sekme çizgisi */
 .dim-x-theme .jetfuel-style-root .j4s5asy0 {
-  background-color: #1d9bf0 !important;
+  background: #1d9bf0 !important;
 }
 
-/* Pasif sekme çizgisi (görünmez kalmalı) */
 .dim-x-theme .jetfuel-style-root .j-72iudk0 {
-  background-color: transparent !important;
-}
-
-/* =======================================
-   SPOR WİDGET - W/L/B DURUM RENKLERI
-   ======================================= */
-
-/* W - yeşil */
-.dim-x-theme .jetfuel-style-root .jozit080.j5qahnl0 {
-  background-color: #1a7a3e !important;
-}
-
-.dim-x-theme .jetfuel-style-root .jozit080.j5qahnl0 p {
-  color: #ffffff !important;
-}
-
-/* L - kırmızı */
-.dim-x-theme .jetfuel-style-root .jozit080.j-hipvmy0 {
-  background-color: #7a1a1a !important;
-}
-
-.dim-x-theme .jetfuel-style-root .jozit080.j-hipvmy0 p {
-  color: #ffffff !important;
-}
-
-/* B - beraberlik */
-.dim-x-theme .jetfuel-style-root .jozit080.j-wx3tpz0 {
-  background-color: #3a4a5a !important;
-}
-
-.dim-x-theme .jetfuel-style-root .jozit080.j-wx3tpz0 p {
-  color: #ffffff !important;
-}
-.dim-x-theme .jetfuel-style-root .jozit080 .j-dlswat0,
-.dim-x-theme .jetfuel-style-root .jozit080 .j-dlswat0 p {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
 /* =======================================
    SPOR WİDGET - İKİLİ KARŞILAŞTIRMA
    ======================================= */
 
-/* Başlık */
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .j-dlswat0 p {
   color: #e6edf3 !important;
 }
 
-/* Kazandı/Beraberlik etiketleri */
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .j-azowe50 p {
   color: #8b98a5 !important;
 }
 
-/* Sayı renkleri - kırmızı (L) */
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .j-hipvmy0.jdcgpf20 {
-  background-color: transparent !important;
+  background: transparent !important;
   color: #f4212e !important;
 }
+
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .j-hipvmy0.jdcgpf20 p {
   color: #f4212e !important;
 }
 
-/* Sayı renkleri - yeşil (W) */
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .j-4cbjpq0.jdcgpf20 {
-  background-color: transparent !important;
+  background: transparent !important;
   color: #00ba7c !important;
 }
+
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .j-4cbjpq0.jdcgpf20 p {
   color: #00ba7c !important;
 }
 
-/* Sayı renkleri - beraberlik */
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .joey3l40.jdcgpf20 {
-  background-color: transparent !important;
+  background: transparent !important;
   color: #8b98a5 !important;
 }
+
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .joey3l40.jdcgpf20 p {
   color: #8b98a5 !important;
 }
 
-/* Karşılaştırma çizgisi */
 .dim-x-theme .jetfuel-style-root .jt6t7a70 .j-4cbjpq0.jfa278c0 {
-  background-color: #00ba7c !important;
+  background: #00ba7c !important;
+}
+
+/* =======================================
+   SPOR WİDGET - MAÇ GÜNÜ SEÇİLİ SEKME
+   ======================================= */
+
+.dim-x-theme .jetfuel-style-root button.j-c3vo4e0 {
+  background: #000000 !important;
+}
+
+/* =======================================
+   B / L / W butonları
+   ======================================= */
+.dim-x-theme .jetfuel-style-root .jdjkzud0.jhonkio0 {
+  background: #16202a69 !important;
+}
+
+/* =======================================
+   Maç / Kadro başlıkları background color
+   ======================================= */
+.dim-x-theme .jetfuel-style-root .jxjbzrd0,
+.dim-x-theme .jetfuel-style-root .j264ize0,
+.dim-x-theme .jetfuel-style-root .jubfiqu0,
+.dim-x-theme .jetfuel-style-root button.jfa278c0 .j42ofci0 {
+  background: #16202a !important;
+}
+
+/* =======================================
+   SPOR WİDGET - PROGRAM/GRUPLAR/HABERLER SEKMELERİ
+   ======================================= */
+
+/* Aktif sekme */
+.dim-x-theme .jetfuel-style-root button.j-yc57ou11.j-e9iyso12 {
+  background: #000000 !important;
+}
+
+.dim-x-theme .jetfuel-style-root button.j-yc57ou11.j-e9iyso12 p {
+  color: #ffffff !important;
+  background: transparent !important;
+}
+
+/* Pasif sekmeler */
+.dim-x-theme .jetfuel-style-root button.j-cw4uj611.j-6qgi8v12 {
+  background: #16202a !important;
+}
+
+.dim-x-theme .jetfuel-style-root button.j-cw4uj611.j-6qgi8v12 p {
+  color: #8b98a5 !important;
+  background: transparent !important;
+}
+
+.dim-x-theme .jetfuel-style-root button.j-cw4uj611.j-6qgi8v12:hover {
+  background: #1b2733 !important;
 }
