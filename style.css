@@ -1631,3 +1631,27 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme .jetfuel-style-root button.j-cw4uj611.j-6qgi8v12:hover {
   background: #1b2733 !important;
 }
+
+/* =======================================
+   ÜST SEKMELER (Sana özel / Takip ediliyor)
+   Seçili durumda arka plan olmasın, hover eskisi gibi kalsın
+   ======================================= */
+
+/* Sadece seçili sekmede arka planı sıfırla */
+.dim-x-theme
+  [data-testid="ScrollSnap-List"]
+  [role="tab"][aria-selected="true"] {
+  background-color: transparent !important;
+}
+
+.dim-x-theme
+  [data-testid="ScrollSnap-List"]
+  [role="tab"][aria-selected="true"]
+  > div,
+.dim-x-theme
+  [data-testid="ScrollSnap-List"]
+  [role="tab"][aria-selected="true"]
+  > div
+  > div {
+  background-color: transparent !important;
+}
