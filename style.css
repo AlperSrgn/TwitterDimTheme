@@ -1662,3 +1662,310 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme .jetfuel-style-root .j-1t6ou80.j-eghxk0.j-380xqp0 {
   background-color: #2b3540 !important;
 }
+/* =======================================
+   SPOR WİDGET - NFL HUB BANNER KARTI
+   ======================================= */
+
+/* Kart arka planı */
+.dim-x-theme .jetfuel-style-root .jyks6vd0.jfa278c0.jlvpxdh0.j5bnkxp0 {
+  background-color: #1e2732 !important;
+}
+
+/* Başlık - "NFL Hub" */
+.dim-x-theme .jetfuel-style-root .j-dlswat0.j-473gc90 {
+  color: #e6edf3 !important;
+}
+
+/* Alt yazı - "Scores, players, and highlights" */
+.dim-x-theme .jetfuel-style-root .jau5210.j-473gc90 {
+  color: #8b98a5 !important;
+}
+
+/* Sağdaki ok butonu - arka plan */
+.dim-x-theme
+  .jetfuel-style-root
+  .j-auy7hr0.j-gnphc40.jqjp5430.jdjkzud0.jmm2vci0.je8l5wg0.j-d7h1p60 {
+  background-color: #2b3540 !important;
+}
+
+/* Ok butonu hover */
+.dim-x-theme
+  .jetfuel-style-root
+  .j-auy7hr0.j-gnphc40.jqjp5430.jdjkzud0.jmm2vci0.je8l5wg0.j-d7h1p60:hover {
+  background-color: #354553 !important;
+}
+
+/* Ok ikonu rengi (svg fill="currentColor" olduğu için parent'tan renk alıyor) */
+.dim-x-theme
+  .jetfuel-style-root
+  .j-auy7hr0.j-gnphc40.jqjp5430.jdjkzud0.jmm2vci0.je8l5wg0.j-d7h1p60 {
+  color: #e6edf3 !important;
+}
+
+/* =======================================
+   SPOR WİDGET - MAÇ SATIRI (Patriots vs Browns tipi kart)
+   ======================================= */
+
+/* Dış kapsayıcı - satır arka planı */
+.dim-x-theme
+  .jetfuel-style-root
+  .j-c5ci8g0.j-ud3sxq0.jqq55sj0.j7rfs230.jbbzd460 {
+  background-color: #1e2732 !important;
+}
+
+/* Hover efekti (satıra tıklanabilir gibi duruyor) */
+.dim-x-theme
+  .jetfuel-style-root
+  .j-c5ci8g0.j-ud3sxq0.jqq55sj0.j7rfs230.jbbzd460:hover {
+  background-color: #243241 !important;
+}
+
+/* Saat - "03:00" */
+.dim-x-theme .jetfuel-style-root .j-azowe50.j-a8kd9c0 {
+  color: #e6edf3 !important;
+}
+
+/* "Today" yazısı */
+.dim-x-theme .jetfuel-style-root .text-text.j-azowe50.j-a8kd9c0 {
+  color: #8b98a5 !important;
+}
+
+/* Takım isimleri - "Patriots" / "Browns" */
+.dim-x-theme .jetfuel-style-root .j8ug26k0.jaqi96f0 {
+  color: #e6edf3 !important;
+}
+
+/* Ortadaki küçük segment/çizgi noktaları (program çubuğu gibi duran 19 adet div) */
+.dim-x-theme .jetfuel-style-root .j1qwqeq12.ji3ksbw11.joey3l413 {
+  background-color: #3a4c5e !important;
+}
+/* =======================================
+   NFL OYUNCU İSTATİSTİK TABLOSU (nflPlayerStatCard)
+   ======================================= */
+
+/* Tablo ve genel kapsayıcı arka planı */
+.dim-x-theme [data-testid^="nflPlayerStatCard"] {
+  background-color: #16202a !important;
+}
+
+/* Tablo hücreleri arka planı (varsayılan beyazı ez) */
+.dim-x-theme [data-testid="nflPlayerStatCardGrid"] table,
+.dim-x-theme [data-testid="nflPlayerStatCardGrid"] thead,
+.dim-x-theme [data-testid="nflPlayerStatCardGrid"] tbody,
+.dim-x-theme [data-testid="nflPlayerStatCardGrid"] tr,
+.dim-x-theme [data-testid="nflPlayerStatCardGrid"] th,
+.dim-x-theme [data-testid="nflPlayerStatCardGrid"] td {
+  background-color: transparent !important;
+}
+
+/* Başlık satırı - "Başlama Vuruşu İadesi" (koyu/siyah metin) */
+.dim-x-theme
+  [data-testid="nflPlayerStatCardGrid"]
+  thead
+  div[style*="15, 20, 25"] {
+  color: #e6edf3 !important;
+}
+
+/* Sütun başlıkları - RET / YDS / ORT / LNG / TD (gri metin) */
+.dim-x-theme
+  [data-testid="nflPlayerStatCardGrid"]
+  thead
+  div[style*="83, 100, 113"] {
+  color: #8b98a5 !important;
+}
+
+/* Oyuncu satırı hücreleri - koyu/siyah değerler (2, 48, 24,0 vb. ve oyuncu adı) */
+.dim-x-theme
+  [data-testid="nflPlayerStatCardGrid"]
+  tbody
+  div[style*="15, 20, 25"] {
+  color: #e6edf3 !important;
+}
+
+/* Oyuncu satırı hover efekti */
+.dim-x-theme [data-testid="nflPlayerStatCardPlayerControl"]:hover {
+  background-color: #1e2732 !important;
+}
+
+/* Oyuncu foto kapsayıcısı arka planı - orijinal koyu tonunu koru ama tema ile uyumlu yap */
+.dim-x-theme [data-testid="nflPlayerStatCardHeadshot"] {
+  background-color: #0b162a !important;
+}
+
+/* Satır ayırıcı çizgiler (r-ttdzmv genelde border/padding class'ı) */
+.dim-x-theme [data-testid="nflPlayerStatCardRow"] td {
+  border-color: #22303c !important;
+}
+/* =======================================
+   AKTİF SEKME ALT ÇİZGİSİ (tab indicator)
+   ======================================= */
+.dim-x-theme
+  .r-1m3jxhj.r-qwd59z.r-1p0dtai.r-epq5cr.r-u8s1d.r-184en5c.r-7qv4eb.r-yn2uhk.r-1wn9b5e {
+  background-color: #4fb3ff !important;
+}
+/* =======================================
+   NFL HUB SEKMELERİ
+   ======================================= */
+
+/* Genel [role="tab"] aktif arka plan kuralını burada iptal et */
+.dim-x-theme [data-testid="nflHubTabs"] [role="tab"][aria-selected="true"] {
+  background-color: transparent !important;
+}
+
+/* Sekme metinleri - pasif */
+.dim-x-theme [data-testid="nflHubTabs"] [role="tab"] span {
+  color: #8b98a5 !important;
+}
+
+/* Sekme metni - seçili (sadece yazı rengi değişsin) */
+.dim-x-theme
+  [data-testid="nflHubTabs"]
+  [role="tab"][aria-selected="true"]
+  span {
+  color: #e6edf3 !important;
+}
+
+/* Hover - hafif arka plan (istersen tamamen kaldırabiliriz) */
+.dim-x-theme [data-testid="nflHubTabs"] [role="tab"]:hover {
+  background-color: #1e2732 !important;
+}
+
+/* Alt ayırıcı çizgi (hairline) */
+.dim-x-theme [data-testid="nflTabBarHairline"] {
+  background-color: #22303c !important;
+}
+/* =======================================
+   CAROUSEL/SLIDER GEZİNME OKLARI
+   ======================================= */
+
+/* Ok butonu arka planı */
+.dim-x-theme
+  .r-1awozwy.r-r9hte5.r-6st0mw.r-8xaxax.r-sdzlij.r-1phboty.r-rs99b7.r-h0d30l {
+  background-color: #1e2732 !important;
+  border-color: transparent !important;
+}
+
+/* Hover */
+.dim-x-theme
+  .r-1awozwy.r-r9hte5.r-6st0mw.r-8xaxax.r-sdzlij.r-1phboty.r-rs99b7.r-h0d30l:hover {
+  color: #2b3540 !important;
+}
+
+/* Ok ikonu rengi */
+.dim-x-theme
+  .r-1awozwy.r-r9hte5.r-6st0mw.r-8xaxax.r-sdzlij.r-1phboty.r-rs99b7.r-h0d30l
+  svg {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+/* =======================================
+   NFL MAÇ KARTI (nflGameCard) - Steelers vs Bills tipi
+   ======================================= */
+
+/* Kart linki - arka plan ve hover */
+.dim-x-theme [data-testid="nflGameCard"] a {
+  background-color: transparent !important;
+}
+.dim-x-theme [data-testid="nflGameCard"] a:hover {
+  background-color: #1e2732 !important;
+}
+
+/* Takım isimleri (Steelers / Bills) - koyu/siyah metni aç */
+.dim-x-theme [data-testid="nflGameCardAwayTeamRow"] div[style*="15, 20, 25"],
+.dim-x-theme [data-testid="nflGameCardHomeTeamRow"] div[style*="15, 20, 25"] {
+  color: #e6edf3 !important;
+}
+
+/* Tarih / Saat (28 Ağu - 02:00) */
+.dim-x-theme [data-testid="nflGameCardStatus"][style*="15, 20, 25"],
+.dim-x-theme [data-testid="nflGameCardKickoffTime"][style*="15, 20, 25"] {
+  color: #8b98a5 !important;
+}
+
+/* Takım logosu arka planı - koyu tonla uyumlu kalsın */
+.dim-x-theme [data-testid="nflGameCardAwayTeamRow"] .r-o4n3w5,
+.dim-x-theme [data-testid="nflGameCardHomeTeamRow"] .r-o4n3w5 {
+  background-color: transparent !important;
+}
+
+/* Ayırıcı çizgi (iki takım arası) */
+.dim-x-theme [data-testid="nflGameCard"] .r-1pz39u2.r-1sw30gj {
+  background-color: #22303c !important;
+}
+/* =======================================
+   NFL GAME CAROUSEL PILL BUTONU
+   ======================================= */
+
+/* Pill arka planı */
+.dim-x-theme [data-testid^="nflGameCarouselPill"] {
+  background-color: #1e2732 !important;
+  border-color: transparent !important;
+}
+
+/* Hover */
+.dim-x-theme [data-testid^="nflGameCarouselPill"]:hover {
+  background-color: #2b3540 !important;
+}
+
+/* Seçili/basılı durum (aria-pressed="true") */
+.dim-x-theme [data-testid^="nflGameCarouselPill"][aria-pressed="true"] {
+  background-color: #243241 !important;
+}
+
+/* Saat yazısı - "Cum 03:00" */
+.dim-x-theme [data-testid^="nflGameCarouselPill"] span {
+  color: #e6edf3 !important;
+}
+
+/* Takım logosu arka planı - transparan kalsın */
+.dim-x-theme [data-testid^="nflGameCarouselPill"] .r-z80fyv {
+  background-color: transparent !important;
+}
+/* =======================================
+   NFL ODDS STRIP (BetMGM bahis oranları şeridi)
+   ======================================= */
+
+/* Genel kapsayıcı arka planı */
+.dim-x-theme [data-testid="nfl-odds-strip"] {
+  background-color: #16202a !important;
+}
+
+/* Link/kart arka planı ve hover */
+.dim-x-theme [data-testid="nfl-odds-strip-sportsbook-link"] {
+  background-color: transparent !important;
+}
+.dim-x-theme [data-testid="nfl-odds-strip-sportsbook-link"]:hover {
+  background-color: #1e2732 !important;
+}
+
+/* Başlık - "Olasılık" ve takım isimleri (Bengals / Eagles) - koyu metni aç */
+.dim-x-theme
+  [data-testid="nfl-odds-strip-sportsbook-link"]
+  div[style*="15, 20, 25"] {
+  color: #e6edf3 !important;
+}
+
+/* Sütun başlıkları - "Oran", "Toplam", "Kazanmak için" (gri metin) */
+.dim-x-theme
+  [data-testid="nfl-odds-strip-sportsbook-link"]
+  div[style*="83, 100, 113"] {
+  color: #8b98a5 !important;
+}
+
+/* Oran değerleri - "+2.5", "-105", "O 36.5" vb. (bunlar inline style almıyor, class ile geliyor) */
+.dim-x-theme [data-testid="nfl-odds-strip-away-row"] span,
+.dim-x-theme [data-testid="nfl-odds-strip-home-row"] span {
+  color: #e6edf3 !important;
+}
+
+/* Oran kutucuklarının arka planı (varsa açık gri arka plan olabilir) */
+.dim-x-theme [data-testid="nfl-odds-strip-away-row"] .r-kdyh1x,
+.dim-x-theme [data-testid="nfl-odds-strip-home-row"] .r-kdyh1x {
+  background-color: #1e2732 !important;
+  border-color: #22303c !important;
+}
+
+/* Ayırıcı çizgiler */
+.dim-x-theme [data-testid="nfl-odds-strip"] .r-1sw30gj {
+  background-color: #22303c !important;
+}
