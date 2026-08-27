@@ -61,13 +61,13 @@
    ======================================= */
 /* kullanıcı adı */
 .dim-x-theme strong {
-  color: #e7e9ea !important;
+  color: #d9d9d9 !important;
 }
 
 /* ikincil metin */
 .dim-x-theme time,
 .dim-x-theme [data-testid="User-Name"] span:last-child {
-  color: #e7e9ea !important;
+  color: #8898ac !important;
 }
 
 /* linkler */
@@ -94,7 +94,7 @@
    BORDER DENGESİ
    ======================================= */
 .dim-x-theme * {
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 /* =======================================
@@ -132,7 +132,7 @@
    Sol Üst Köşe X ikonu ve sol menü ikonlar
    ======================================= */
 .dim-x-theme header svg path {
-  fill: #e7e9ea !important;
+  fill: #d9d9d9 !important;
 }
 
 /* =====================================
@@ -143,7 +143,7 @@
 .dim-x-theme [data-testid="userActions"] svg,
 .dim-x-theme [data-testid="sendDMFromProfile"] svg,
 .dim-x-theme button[aria-haspopup="menu"] svg {
-  fill: #e7e9ea !important;
+  fill: #d9d9d9 !important;
 }
 
 /* arka plan */
@@ -249,7 +249,7 @@
 ===================================== */
 .dim-x-theme [data-testid="chat-drawer-main"] {
   background-color: #1b2733 !important;
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 .dim-x-theme [data-testid="chat-drawer-main"] svg {
@@ -324,7 +324,7 @@
 
 /* Buton hover */
 .dim-x-theme a[href="/i/premium_sign_up"]:hover {
-  background-color: #22303c !important;
+  background-color: #38444d !important;
 }
 
 /* =======================================
@@ -349,7 +349,7 @@
 }
 /* Liste oluştur butonu */
 .dim-x-theme a[href="/i/lists/create"] svg {
-  color: #e7e9ea !important;
+  color: #d9d9d9 !important;
   fill: currentColor !important;
 }
 
@@ -850,7 +850,7 @@ Sohbet sekmeleri metin + ikon
 /* Modal arka plan ve kenarlık */
 .dim-x-theme [role="dialog"] {
   background-color: #15202b !important;
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 /* Başlık "Yeni mesaj" */
@@ -1076,7 +1076,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Modal arka plan */
 .dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl {
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 /* Geri ve düzenle butonları */
@@ -1124,7 +1124,7 @@ Sohbet sekmeleri metin + ikon
 /* Liste öğeleri (Kaybolan Mesajlar, Ekran Görüntüsü...) */
 .dim-x-theme .bg-gray-0.border-gray-50.rounded-3xl .flex.flex-row.bg-gray-50 {
   background-color: #1e2732 !important;
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 .dim-x-theme
   .bg-gray-0.border-gray-50.rounded-3xl
@@ -1171,7 +1171,7 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme
   .bg-gray-0.border-gray-50.rounded-3xl
   [class*="after:bg-gray-100"]::after {
-  background-color: #22303c !important;
+  background-color: #38444d !important;
 }
 
 /* =======================================
@@ -1181,7 +1181,7 @@ Sohbet sekmeleri metin + ikon
 /* Menü arka plan ve kenarlık */
 .dim-x-theme .bg-gray-50.border-gray-100.rounded-xl {
   background-color: #1e2732 !important;
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 /* Menü butonları */
@@ -1221,7 +1221,7 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme button.bg-background.text-text {
   background-color: #1e2732 !important;
   color: #e6edf3 !important;
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 .dim-x-theme button.bg-background.text-text:hover {
@@ -1262,7 +1262,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Bölüm ayırıcı çizgiler */
 .dim-x-theme .border-t {
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 /* Radio butonları - seçilmemiş */
@@ -1446,7 +1446,7 @@ Sohbet sekmeleri metin + ikon
    ======================================= */
 /* Başlık */
 .dim-x-theme [data-testid="confirmationSheetDialog"] h1 {
-  color: #e7e9ea !important;
+  color: #d9d9d9 !important;
 }
 
 /* =======================================
@@ -1454,7 +1454,7 @@ Sohbet sekmeleri metin + ikon
    ======================================= */
 
 .dim-x-theme .r-z2wwpe.r-1phboty.r-d045u9.r-19wmn03 {
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 /* =======================================
@@ -1515,7 +1515,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Ayırıcı çizgiler */
 .dim-x-theme .jetfuel-style-root .j-tfoedk0 {
-  background-color: #22303c !important;
+  background-color: #38444d !important;
 }
 
 /* İkonlar */
@@ -1794,7 +1794,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Satır ayırıcı çizgiler (r-ttdzmv genelde border/padding class'ı) */
 .dim-x-theme [data-testid="nflPlayerStatCardRow"] td {
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 /* =======================================
    AKTİF SEKME ALT ÇİZGİSİ (tab indicator)
@@ -1832,7 +1832,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Alt ayırıcı çizgi (hairline) */
 .dim-x-theme [data-testid="nflTabBarHairline"] {
-  background-color: #22303c !important;
+  background-color: #38444d !important;
 }
 /* =======================================
    CAROUSEL/SLIDER GEZİNME OKLARI
@@ -1890,7 +1890,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Ayırıcı çizgi (iki takım arası) */
 .dim-x-theme [data-testid="nflGameCard"] .r-1pz39u2.r-1sw30gj {
-  background-color: #22303c !important;
+  background-color: #38444d !important;
 }
 /* =======================================
    NFL GAME CAROUSEL PILL BUTONU
@@ -1962,12 +1962,12 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme [data-testid="nfl-odds-strip-away-row"] .r-kdyh1x,
 .dim-x-theme [data-testid="nfl-odds-strip-home-row"] .r-kdyh1x {
   background-color: #1e2732 !important;
-  border-color: #22303c !important;
+  border-color: #38444d !important;
 }
 
 /* Ayırıcı çizgiler */
 .dim-x-theme [data-testid="nfl-odds-strip"] .r-1sw30gj {
-  background-color: #22303c !important;
+  background-color: #38444d !important;
 }
 /* =======================================
    SARI KART (j6mg5ra0)
