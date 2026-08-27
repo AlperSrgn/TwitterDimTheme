@@ -1,6 +1,6 @@
 /* =======================================
    X ADVANCED DIM THEME
-   Ana renk: #16202a
+   Ana renk: #15202B
    ======================================= */
 .dim-x-theme {
   color-scheme: dim;
@@ -15,7 +15,7 @@
 .dim-x-theme section,
 .dim-x-theme nav,
 .dim-x-theme header {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 .dim-x-theme section,
 /*.dim-x-theme div[class*="r-1wtj0ep"],*/
@@ -23,12 +23,12 @@
 .dim-x-theme div[class*="r-3pj75a"],
 .dim-x-theme div[class*="r-w7s2jr"],
 .dim-x-theme div[class*="r-14lw9ot"] {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 
 /* timeline */
 .dim-x-theme [data-testid="primaryColumn"] {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 
 /* =======================================
@@ -267,14 +267,14 @@
 
 /* header arka plan */
 .dim-x-theme [data-testid="GrokDrawerHeader"] {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] svg {
   color: #ffffff !important;
   fill: currentColor !important;
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] button:hover {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 .dim-x-theme [data-testid="GrokDrawerHeader"] button:hover svg {
   color: #8fb3d9 !important;
@@ -296,7 +296,7 @@
   background-color: #243241 !important;
 }
 .dim-x-theme [data-testid="typeaheadResult"] button {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 
 /* =======================================
@@ -387,7 +387,7 @@
    ======================================= */
 /* Textarea arka plan ve metin rengi */
 .dim-x-theme textarea.r-30o5oe {
-  background-color: #16202a !important; /* Koyu tema arka plan */
+  background-color: #15202b !important; /* Koyu tema arka plan */
   color: #eff3f4 !important; /* Açık metin rengi */
   caret-color: #ffffff !important; /* İmleç rengi */
 }
@@ -849,7 +849,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Modal arka plan ve kenarlık */
 .dim-x-theme [role="dialog"] {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
   border-color: #22303c !important;
 }
 
@@ -1025,7 +1025,7 @@ Sohbet sekmeleri metin + ikon
   ~ .absolute.-z-10
   > div:last-child,
 .dim-x-theme .absolute.inset-0.-z-10 > div:last-child {
-  background: linear-gradient(360deg, transparent 0%, #16202a 100%) !important;
+  background: linear-gradient(360deg, transparent 0%, #15202b 100%) !important;
 }
 
 /* CSS değişkeni fallback olarak tanımla */
@@ -1039,7 +1039,7 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme .from-transparent.via-background\/80.to-background {
   --tw-gradient-from: transparent !important;
   --tw-gradient-via: rgba(22, 32, 42, 0.8) !important;
-  --tw-gradient-to: #16202a !important;
+  --tw-gradient-to: #15202b !important;
 }
 
 /* =======================================
@@ -1245,7 +1245,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Arka plan ve başlık çubuğu */
 .dim-x-theme .bg-background {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 
 /* Başlık yazısı ve genel metin */
@@ -1421,10 +1421,10 @@ Sohbet sekmeleri metin + ikon
    Sayfa içi Scrollbar
    ======================================= */
 .dim-x-theme * {
-  scrollbar-color: #2f3e4d #16202a;
+  scrollbar-color: #2f3e4d #15202b;
 }
 .dim-x-theme *::-webkit-scrollbar-track {
-  background-color: #16202a;
+  background-color: #15202b;
 }
 .dim-x-theme *::-webkit-scrollbar-thumb {
   background-color: #2f3e4d;
@@ -1462,7 +1462,7 @@ Sohbet sekmeleri metin + ikon
    ======================================= */
 
 .dim-x-theme div.r-1h3ijdo {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 
 .dim-x-theme button.r-1wron08.r-peo1c {
@@ -1486,7 +1486,7 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme .jetfuel-style-root,
 .dim-x-theme .jetfuel-style-root > .jf-element,
 .dim-x-theme .jetfuel-style-root > .jf-element > .jf-element {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
   color: #e6edf3 !important;
 }
 
@@ -1498,7 +1498,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Maç satırı butonları */
 .dim-x-theme .jetfuel-style-root button.jfa278c0 {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
   border-color: transparent !important;
   color: #e6edf3 !important;
 }
@@ -1509,7 +1509,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Kategori butonu (Futbol) */
 .dim-x-theme .jetfuel-style-root button.jnq64s60 {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
   color: #e6edf3 !important;
 }
 
@@ -1591,7 +1591,7 @@ Sohbet sekmeleri metin + ikon
    B / L / W butonları
    ======================================= */
 .dim-x-theme .jetfuel-style-root .jdjkzud0.jhonkio0 {
-  background: #16202a69 !important;
+  background: #15202b69 !important;
 }
 
 /* =======================================
@@ -1601,7 +1601,7 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme .jetfuel-style-root .j264ize0,
 .dim-x-theme .jetfuel-style-root .jubfiqu0,
 .dim-x-theme .jetfuel-style-root button.jfa278c0 .j42ofci0 {
-  background: #16202a !important;
+  background: #15202b !important;
 }
 
 /* =======================================
@@ -1620,7 +1620,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Pasif sekmeler */
 .dim-x-theme .jetfuel-style-root button.j-cw4uj611.j-6qgi8v12 {
-  background: #16202a !important;
+  background: #15202b !important;
 }
 
 .dim-x-theme .jetfuel-style-root button.j-cw4uj611.j-6qgi8v12 p {
@@ -1745,7 +1745,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Tablo ve genel kapsayıcı arka planı */
 .dim-x-theme [data-testid^="nflPlayerStatCard"] {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 
 /* Tablo hücreleri arka planı (varsayılan beyazı ez) */
@@ -1927,7 +1927,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Genel kapsayıcı arka planı */
 .dim-x-theme [data-testid="nfl-odds-strip"] {
-  background-color: #16202a !important;
+  background-color: #15202b !important;
 }
 
 /* Link/kart arka planı ve hover */
