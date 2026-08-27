@@ -1655,3 +1655,10 @@ Sohbet sekmeleri metin + ikon
   > div {
   background-color: transparent !important;
 }
+
+/* =======================================
+   SKOR KUTUSU DIŞ KAPSAYICI - KOYU GRİ ARKA PLAN
+   ======================================= */
+.dim-x-theme .jetfuel-style-root .j-1t6ou80.j-eghxk0.j-380xqp0 {
+  background-color: #2b3540 !important;
+}
