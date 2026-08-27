@@ -1969,3 +1969,32 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme [data-testid="nfl-odds-strip"] .r-1sw30gj {
   background-color: #22303c !important;
 }
+/* =======================================
+   SARI KART (j6mg5ra0)
+   ======================================= */
+.dim-x-theme .j6mg5ra0,
+.dim-x-theme .j6mg5ra0 svg,
+.dim-x-theme .j6mg5ra0 svg path {
+  color: #f0c419 !important;
+  fill: #f0c419 !important;
+}
+
+/* =======================================
+   OYUNCU DEĞİŞİKLİK OKLARI (sadece bu bölüm - giriş/çıkış)
+   ======================================= */
+
+/* j-e9qc6r0 - oyuna giren oyuncu (yeşil) */
+.dim-x-theme .joadn9a0 .j-e9qc6r0,
+.dim-x-theme .joadn9a0 .j-e9qc6r0 svg,
+.dim-x-theme .joadn9a0 .j-e9qc6r0 svg path {
+  color: #00ba7c !important;
+  fill: #00ba7c !important;
+}
+
+/* j-ppdyxm0 - oyundan çıkan oyuncu (kırmızı) */
+.dim-x-theme .joadn9a0 .j-ppdyxm0,
+.dim-x-theme .joadn9a0 .j-ppdyxm0 svg,
+.dim-x-theme .joadn9a0 .j-ppdyxm0 svg path {
+  color: #f4212e !important;
+  fill: #f4212e !important;
+}
