@@ -32,28 +32,29 @@
 }
 
 /* =======================================
-   SOL MENÜ
-   ======================================= */
-
-/* menu item hover */
-.dim-x-theme header nav a:hover,
-.dim-x-theme header nav button:hover {
-  background-color: #243241 !important;
-  border-radius: 999px;
-}
-/* =======================================
-   SOL MENÜ - HOVER EFEKTİ
+   SOL MENÜ - HOVER (tüm item'lar için tutarlı)
    ======================================= */
 
 .dim-x-theme header nav a:hover,
-.dim-x-theme header nav button:hover {
+.dim-x-theme header nav a:hover *,
+.dim-x-theme header nav button:hover,
+.dim-x-theme header nav button:hover * {
   background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
 .dim-x-theme header nav a:hover > div,
 .dim-x-theme header nav button:hover > div {
-  background-color: #243241 !important;
-  border-radius: 999px;
+  background-color: #2a3540 !important;
+}
+
+/* =======================================
+   ANASAYFA BUTONU - HOVER KÖŞE YUVARLAKLIĞI
+   ======================================= */
+
+.dim-x-theme [data-testid="AppTabBar_Home_Link"]:hover {
+  border-radius: 999px !important;
 }
 
 /* =======================================
@@ -198,7 +199,7 @@
 /* =====================================
    Reply thread dikey çizgi
 ===================================== */
-.r-1bimlpy.r-f8sm7e.r-m5arl1 {
+.dim-x-theme .r-1bimlpy.r-f8sm7e.r-m5arl1 {
   background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
@@ -323,9 +324,9 @@
 }
 
 /* Buton hover */
-.dim-x-theme a[href="/i/premium_sign_up"]:hover {
-  background-color: #38444d !important;
-}
+/*.dim-x-theme a[href="/i/premium_sign_up"]:hover {
+  background-color: #2a3540 !important;
+}*/
 
 /* =======================================
    ÜST BAŞLIK ÇUBUĞU İKONLARI
@@ -1968,8 +1969,8 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme .j6mg5ra0,
 .dim-x-theme .j6mg5ra0 svg,
 .dim-x-theme .j6mg5ra0 svg path {
-  color: #f0c419 !important;
-  fill: #f0c419 !important;
+  color: #eab308 !important;
+  fill: #eab308 !important;
 }
 
 /* =======================================
