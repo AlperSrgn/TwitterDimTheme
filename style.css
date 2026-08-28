@@ -1998,3 +1998,12 @@ Sohbet sekmeleri metin + ikon
   color: #f4212e !important;
   fill: #f4212e !important;
 }
+
+/* =======================================
+   YANIT KISITLAMASI BİLDİRİMİ (kilit ikonu + uyarı metni)
+   ======================================= */
+
+/* Arka plan */
+.dim-x-theme [role="status"][style*="247, 249, 249"] {
+  background-color: #1e2732 !important;
+}
