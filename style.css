@@ -303,7 +303,7 @@
    Premium / ONAYLI HESAP BİLGİLENDİRME KARTI
    ======================================= */
 .dim-x-theme div[style*="194, 241, 220"] {
-  background-color: #104728 !important;
+  background-color: #004329 !important;
 }
 
 /* Kart iç başlık */
@@ -1464,15 +1464,8 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme div.r-1h3ijdo {
   background-color: #15202b !important;
 }
-
-.dim-x-theme button.r-1wron08.r-peo1c {
-  color: #e6edf3 !important;
+.dim-x-theme .r-1h3ijdo.r-bt5hs4 button {
   border-color: transparent !important;
-}
-
-.dim-x-theme button.r-1wron08.r-peo1c svg {
-  color: #e6edf3 !important;
-  fill: currentColor !important;
 }
 
 .dim-x-theme button.r-1wron08.r-peo1c:hover {
@@ -2006,4 +1999,133 @@ Sohbet sekmeleri metin + ikon
 /* Arka plan */
 .dim-x-theme [role="status"][style*="247, 249, 249"] {
   background-color: #1e2732 !important;
+}
+
+/* =======================================
+   DM MESAJ İSTEĞİ - SİL BUTONU
+   ======================================= */
+.dim-x-theme [data-testid="dm-message-request-delete-button"] {
+  background-color: #38444d !important;
+  color: #e6edf3 !important;
+}
+
+/* =======================================
+   DM MESAJ BALONU (giden mesaj - message-text)
+   ======================================= */
+
+/* Mesaj balonu arka planı */
+.dim-x-theme [data-testid^="message-text-"] {
+  background-color: #38444d !important;
+}
+
+/* Saat bilgisi (19:33) - biraz daha soluk beyaz */
+.dim-x-theme [data-testid^="message-text-"] .text-gray700 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* =======================================
+   DM MESAJ İSTEĞİ LİSTESİ SATIRI
+   ======================================= */
+
+/* Satır arka planı */
+.dim-x-theme [data-testid^="dm-message-request-item-"] .bg-gray-0 {
+  background-color: #16202a !important;
+}
+
+/* Hover */
+.dim-x-theme
+  [data-testid^="dm-message-request-item-"]
+  .hover\:bg-gray-50:hover {
+  background-color: #1e2732 !important;
+}
+
+/* Avatar placeholder arka planı (resim yüklenmeden önce) */
+.dim-x-theme [data-testid^="dm-message-request-item-"] .bg-gray-300 {
+  background-color: #2b3540 !important;
+}
+
+/* Kullanıcı adı*/
+.dim-x-theme [data-testid^="dm-message-request-item-"] .text-text {
+  color: #e6edf3 !important;
+}
+
+/* Zaman, takipçi sayısı, mesaj önizlemesi - ikincil gri metin */
+.dim-x-theme [data-testid^="dm-message-request-item-"] .text-gray-700 {
+  color: #8b98a5 !important;
+}
+
+/* Alt çizgi (satırlar arası ayırıcı) */
+.dim-x-theme [data-testid^="dm-message-request-item-"] .border-gray-50 {
+  border-color: #22303c !important;
+}
+
+/* =======================================
+   DM INBOX DROPDOWN MENÜSÜ
+   ======================================= */
+
+/* Menü arka planı ve kenarlığı */
+.dim-x-theme [data-testid="dm-inbox-dropdown-content"] {
+  background-color: #1e2732 !important;
+  border-color: #22303c !important;
+}
+
+/* Menü öğeleri - metin rengi */
+.dim-x-theme [data-testid="dm-inbox-dropdown-content"] [role="menuitem"] {
+  color: #e6edf3 !important;
+}
+
+/* Menü öğeleri - ikonlar */
+.dim-x-theme [data-testid="dm-inbox-dropdown-content"] [role="menuitem"] svg {
+  color: #e6edf3 !important;
+  fill: currentColor !important;
+}
+
+/* Aktif/seçili öğe (şu an "Tümü" - bg-btn-ghost-hover class'ıyla vurgulanmış) */
+.dim-x-theme [data-testid="dm-inbox-dropdown-content"] .bg-btn-ghost-hover {
+  background-color: #263442 !important;
+}
+
+/* Hover efekti (tüm menü öğeleri için) */
+.dim-x-theme [data-testid="dm-inbox-dropdown-content"] [role="menuitem"]:hover {
+  background-color: #263442 !important;
+}
+
+/* Hover'daki dekoratif katman (absolute konumlu, opacity ile açılan div) */
+.dim-x-theme
+  [data-testid="dm-inbox-dropdown-content"]
+  .bg-\[var\(--x-hover-subtle\)\] {
+  background-color: #263442 !important;
+}
+
+/* Ayırıcı çizgiler */
+.dim-x-theme [data-testid="dm-inbox-dropdown-content"] [role="separator"] {
+  border-color: #22303c !important;
+}
+/* =======================================
+   "Mesaj İstekleri" BAŞLIĞI
+   ======================================= */
+.dim-x-theme .text-headline1.font-bold.text-primary {
+  color: #e6edf3 !important;
+}
+
+/* =======================================
+   X LOGOSU (ana sayfa linki) - BORDER ŞEFFAF + HOVER
+   ======================================= */
+.dim-x-theme header a[href="/home"] {
+  border-color: transparent !important;
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+.dim-x-theme header a[href="/home"] div[style] {
+  border-color: transparent !important;
+}
+
+.dim-x-theme header a[href="/home"]:hover {
+  border-color: transparent !important;
+  background-color: rgba(230, 237, 243, 0.1) !important;
+}
+
+.dim-x-theme header a[href="/home"]:hover div[style] {
+  border-color: transparent !important;
 }
