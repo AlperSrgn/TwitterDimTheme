@@ -2135,3 +2135,8 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme header a[href="/home"]:hover div[style] {
   border-color: transparent !important;
 }
+
+/* "Live" text */
+.dim-x-theme .jf-element.text-text.j1c4pz20.j-uom3dw0.jau5210.jdjkzud0 p {
+  color: rgb(236, 72, 153) !important;
+}
