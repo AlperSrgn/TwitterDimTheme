@@ -2140,3 +2140,40 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme .jf-element.text-text.j1c4pz20.j-uom3dw0.jau5210.jdjkzud0 p {
   color: rgb(236, 72, 153) !important;
 }
+
+/* =======================================
+   FİNANS KARTI (Bitcoin/kripto widget)
+   ======================================= */
+
+/* Kartın kendisi - normal durum arka planı */
+.dim-x-theme [role="presentation"]:has(a[href*="/search?q="]) {
+  background-color: #1c2938 !important;
+}
+
+/* Ana metin - isim ve fiyat (örn. "Bitcoin", "$79.989,00") */
+.dim-x-theme
+  [role="presentation"]
+  a[href*="/search?q="]
+  div[style*="rgb(15, 20, 25)"] {
+  color: #e6edf3 !important;
+  background-color: #1c2938 !important;
+}
+
+/* İkincil metin - sembol (örn. "BTC") */
+.dim-x-theme
+  [role="presentation"]
+  a[href*="/search?q="]
+  div[style*="rgb(83, 100, 113)"] {
+  color: #8b98a5 !important;
+  background-color: #1c2938 !important;
+}
+
+/* Kart hover arka planı */
+.dim-x-theme [role="presentation"] a[href*="/search?q="] {
+  background-color: #1c2938 !important;
+}
+
+/* Seçili zaman aralığı butonu (1D/1W/1M vs.) - arka plan koyu */
+.dim-x-theme button[aria-selected="true"] {
+  background-color: #1c2938 !important;
+}
