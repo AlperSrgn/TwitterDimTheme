@@ -2147,7 +2147,7 @@ Sohbet sekmeleri metin + ikon
 
 /* Kartın kendisi - normal durum arka planı */
 .dim-x-theme [role="presentation"]:has(a[href*="/search?q="]) {
-  background-color: #1c2938 !important;
+  background-color: #15202b !important;
 }
 
 /* Ana metin - isim ve fiyat (örn. "Bitcoin", "$79.989,00") */
@@ -2156,7 +2156,7 @@ Sohbet sekmeleri metin + ikon
   a[href*="/search?q="]
   div[style*="rgb(15, 20, 25)"] {
   color: #e6edf3 !important;
-  background-color: #1c2938 !important;
+  background-color: #15202b !important;
 }
 
 /* İkincil metin - sembol (örn. "BTC") */
@@ -2165,15 +2165,20 @@ Sohbet sekmeleri metin + ikon
   a[href*="/search?q="]
   div[style*="rgb(83, 100, 113)"] {
   color: #8b98a5 !important;
-  background-color: #1c2938 !important;
+  background-color: #15202b !important;
 }
 
 /* Kart hover arka planı */
 .dim-x-theme [role="presentation"] a[href*="/search?q="] {
-  background-color: #1c2938 !important;
+  background-color: #15202b !important;
 }
 
 /* Seçili zaman aralığı butonu (1D/1W/1M vs.) - arka plan koyu */
 .dim-x-theme button[aria-selected="true"] {
-  background-color: #1c2938 !important;
+  background-color: #15202b !important;
+}
+/* Bildirim sayısı rozeti - hover'da rengi değişmesin */
+.dim-x-theme header nav a:hover [aria-live="polite"],
+.dim-x-theme header nav button:hover [aria-live="polite"] {
+  background-color: rgb(29, 155, 240) !important;
 }
