@@ -2182,3 +2182,18 @@ Sohbet sekmeleri metin + ikon
 .dim-x-theme header nav button:hover [aria-live="polite"] {
   background-color: rgb(29, 155, 240) !important;
 }
+
+/* =======================================
+   PREMIUM PROMO KARTI (istatistik reklamı)
+   ======================================= */
+
+/* Kart arka planı */
+.dim-x-theme div[style*="rgb(247, 249, 249)"] {
+  background-color: #22303c !important;
+}
+
+/* Anasayfa okunmamış noktası - hover'da rengi değişmesin */
+.dim-x-theme header nav a:hover .r-l5o3uw,
+.dim-x-theme header nav button:hover .r-l5o3uw {
+  background-color: rgba(29, 155, 240, 1) !important;
+}
